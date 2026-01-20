@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- EmoBit Logo - Heart with digital pulse -->
+    <group
+        android:pivotX="54"
+        android:pivotY="54"
+        android:scaleX="0.6"
+        android:scaleY="0.6"
+        android:translateX="21.6"
+        android:translateY="21.6">
+        
+        <!-- Heart shape -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M54,90 C54,90 18,60 18,36 C18,18 30,12 42,12 C48,12 52,15 54,18 C56,15 60,12 66,12 C78,12 90,18 90,36 C90,60 54,90 54,90 Z"/>
+        
+        <!-- Digital pulse line -->
+        <path
+            android:strokeColor="#059669"
+            android:strokeWidth="4"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round"
+            android:fillColor="#00000000"
+            android:pathData="M28,48 L38,48 L42,38 L48,58 L54,28 L60,58 L64,44 L68,48 L80,48"/>
+        
+        <!-- Inner glow circle -->
+        <path
+            android:fillColor="#10B981"
+            android:fillAlpha="0.3"
+            android:pathData="M54,54 m-20,0 a20,20 0,1 1,40 0 a20,20 0,1 1,-40 0"/>
+    </group>
+</vector>

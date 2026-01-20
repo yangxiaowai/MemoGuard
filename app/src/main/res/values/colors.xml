@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- EmoBit 主色调 - 温暖杏色系 -->
+    <color name="primary_50">#FFF7ED</color>
+    <color name="primary_100">#FFEDD5</color>
+    <color name="primary_200">#FED7AA</color>
+    <color name="primary_300">#FDBA74</color>
+    <color name="primary_400">#FB923C</color>
+    <color name="primary_500">#F97316</color>
+    <color name="primary_600">#EA580C</color>
+    <color name="primary_700">#C2410C</color>
+    <color name="primary_800">#9A3412</color>
+    <color name="primary_900">#7C2D12</color>
+
+    <!-- 主题色别名 -->
+    <color name="primary">@color/primary_500</color>
+    <color name="primary_dark">@color/primary_700</color>
+    <color name="primary_light">@color/primary_100</color>
+    <color name="primary_variant">@color/primary_600</color>
+
+    <!-- 安全状态色 - 绿色 -->
+    <color name="safe_light">#DCFCE7</color>
+    <color name="safe">#22C55E</color>
+    <color name="safe_dark">#166534</color>
+
+    <!-- 警告状态色 - 琥珀色 -->
+    <color name="warning_light">#FEF3C7</color>
+    <color name="warning">#F59E0B</color>
+    <color name="warning_dark">#92400E</color>
+
+    <!-- 危险状态色 - 红色 -->
+    <color name="danger_light">#FEE2E2</color>
+    <color name="danger">#EF4444</color>
+    <color name="danger_dark">#991B1B</color>
+
+    <!-- 背景色 - 温暖米色 -->
+    <color name="cream_50">#FFFBF5</color>
+    <color name="cream_100">#FEF7EB</color>
+    <color name="cream_200">#FDF0D5</color>
+    <color name="cream_300">#FCE4B8</color>
+
+    <!-- 中性色 - 灰色系 -->
+    <color name="slate_50">#F8FAFC</color>
+    <color name="slate_100">#F1F5F9</color>
+    <color name="slate_200">#E2E8F0</color>
+    <color name="slate_300">#CBD5E1</color>
+    <color name="slate_400">#94A3B8</color>
+    <color name="slate_500">#64748B</color>
+    <color name="slate_600">#475569</color>
+    <color name="slate_700">#334155</color>
+    <color name="slate_800">#1E293B</color>
+    <color name="slate_900">#0F172A</color>
+
+    <!-- 功能色 -->
+    <color name="background">@color/cream_50</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="on_secondary">@color/primary_600</color>
+    <color name="on_background">@color/slate_800</color>
+    <color name="on_surface">@color/slate_800</color>
+    <color name="on_error">#FFFFFF</color>
+    <color name="error">@color/danger</color>
+
+    <!-- 文字颜色 -->
+    <color name="text_primary">@color/slate_800</color>
+    <color name="text_secondary">@color/slate_500</color>
+    <color name="text_hint">@color/slate_400</color>
+    <color name="text_disabled">@color/slate_300</color>
+    <color name="text_on_primary">#FFFFFF</color>
+
+    <!-- 分割线和边框 -->
+    <color name="divider">@color/slate_200</color>
+    <color name="border">@color/slate_200</color>
+    <color name="border_focused">@color/primary_400</color>
+
+    <!-- 阴影色 -->
+    <color name="shadow">#1A000000</color>
+    <color name="shadow_primary">#26F97316</color>
+
+    <!-- 覆盖层 -->
+    <color name="overlay_dark">#80000000</color>
+    <color name="overlay_light">#B3FFFFFF</color>
+
+    <!-- 渐变色 -->
+    <color name="gradient_start">@color/primary_50</color>
+    <color name="gradient_center">@color/cream_50</color>
+    <color name="gradient_end">@color/primary_100</color>
+
+    <!-- 导航栏 -->
+    <color name="nav_selected">@color/primary_500</color>
+    <color name="nav_unselected">@color/slate_400</color>
+    <color name="nav_background">#FFFFFF</color>
+
+    <!-- 健康指标颜色 -->
+    <color name="heart_rate">#F43F5E</color>
+    <color name="blood_oxygen">#3B82F6</color>
+    <color name="steps">#22C55E</color>
+    <color name="sleep">#6366F1</color>
+</resources>

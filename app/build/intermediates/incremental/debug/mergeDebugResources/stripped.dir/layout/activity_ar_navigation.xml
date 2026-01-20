@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E293B">
+
+    <!-- 相机预览占位（实际项目中使用 PreviewView） -->
+    <FrameLayout
+        android:id="@+id/cameraPreview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1E293B">
+
+        <!-- AR 叠加层占位 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="AR 实景导航画面"
+            android:textColor="@color/slate_500"
+            android:textSize="@dimen/text_lg" />
+
+        <!-- 3D 小人指示器 -->
+        <FrameLayout
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/bg_circle_primary_light"
+            android:elevation="8dp">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_avatar_placeholder" />
+        </FrameLayout>
+
+        <!-- 方向箭头 -->
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="200dp"
+            android:rotation="-45"
+            android:src="@drawable/ic_navigation"
+            app:tint="@color/primary" />
+    </FrameLayout>
+
+    <!-- 顶部返回按钮 -->
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_margin="@dimen/spacing_md"
+        android:background="@drawable/bg_circle_dark"
+        android:contentDescription="返回"
+        android:src="@drawable/ic_chevron_left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/text_on_primary" />
+
+    <!-- 导航指示文字 -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardNavInstruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_md"
+        app:cardBackgroundColor="@color/primary"
+        app:cardCornerRadius="@dimen/radius_elder"
+        app:cardElevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvNavInstruction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/spacing_lg"
+            android:paddingVertical="@dimen/spacing_md"
+            android:textAppearance="@style/TextAppearance.EmoBit.Elder.LG"
+            android:textColor="@color/text_on_primary"
+            tools:text="前方 50 米左转" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- 底部导航信息卡片 -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardNavInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/spacing_md"
+        android:layout_marginBottom="@dimen/spacing_xl"
+        app:cardBackgroundColor="@color/surface"
+        app:cardCornerRadius="@dimen/radius_elder_lg"
+        app:cardElevation="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_lg">
+
+            <!-- 目的地信息 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:background="@drawable/bg_icon_primary_filled">
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_home"
+                        app:tint="@color/text_on_primary" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_md"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvDestination"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.EmoBit.Elder.XL"
+                        android:textColor="@color/text_primary"
+                        tools:text="回家" />
+
+                    <TextView
+                        android:id="@+id/tvAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_xxs"
+                        android:textAppearance="@style/TextAppearance.EmoBit.Elder.SM"
+                        android:textColor="@color/text_secondary"
+                        tools:text="北京市朝阳区幸福小区3号楼" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 距离和时间 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_md"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvDistance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.EmoBit.Elder.XL"
+                        android:textColor="@color/primary"
+                        tools:text="1.2 公里" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="剩余距离"
+                        android:textAppearance="@style/TextAppearance.EmoBit.Elder.XS"
+                        android:textColor="@color/text_hint" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="40dp"
+                    android:background="@color/divider" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvEta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.EmoBit.Elder.XL"
+                        android:textColor="@color/safe"
+                        tools:text="约 15 分钟" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="预计时间"
+                        android:textAppearance="@style/TextAppearance.EmoBit.Elder.XS"
+                        android:textColor="@color/text_hint" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 结束导航按钮 -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnEndNav"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_elder_height"
+                android:layout_marginTop="@dimen/spacing_md"
+                android:text="@string/nav_end"
+                android:textAppearance="@style/TextAppearance.EmoBit.Elder.LG"
+                app:backgroundTint="@color/slate_200"
+                app:cornerRadius="@dimen/radius_elder" />
+
+            <!-- 模拟徘徊按钮 (测试用) -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSimulateWandering"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/spacing_xs"
+                android:text="模拟徘徊检测"
+                android:textSize="@dimen/text_sm"
+                app:backgroundTint="@color/warning"
+                app:cornerRadius="@dimen/radius_md" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- 徘徊预警弹窗 -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/layoutWanderingAlert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/spacing_lg"
+        android:visibility="gone"
+        app:cardBackgroundColor="@color/warning"
+        app:cardCornerRadius="@dimen/radius_elder_lg"
+        app:cardElevation="24dp"
+        app:layout_constraintBottom_toTopOf="@id/cardNavInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_lg">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_alert_triangle"
+                app:tint="@color/text_on_primary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_sm"
+                android:text="@string/nav_wandering_detected"
+                android:textAppearance="@style/TextAppearance.EmoBit.Elder.LG"
+                android:textColor="@color/text_on_primary"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_xxs"
+                android:text="@string/nav_wandering_help"
+                android:textAppearance="@style/TextAppearance.EmoBit.Elder.Base"
+                android:textColor="@color/warning_light" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_md"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnContinueNav"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/spacing_xs"
+                    android:layout_weight="1"
+                    android:text="@string/nav_continue"
+                    android:textAppearance="@style/TextAppearance.EmoBit.Elder.Base"
+                    app:backgroundTint="@color/surface"
+                    app:cornerRadius="@dimen/radius_elder" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnCallFamily"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_xs"
+                    android:layout_weight="1"
+                    android:text="@string/nav_call_family"
+                    android:textAppearance="@style/TextAppearance.EmoBit.Elder.Base"
+                    app:backgroundTint="@color/danger"
+                    app:cornerRadius="@dimen/radius_elder" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

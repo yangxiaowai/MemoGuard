@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 基础主题 -->
+    <style name="Theme.EmoBit" parent="Theme.Material3.Light.NoActionBar">
+        <!-- 主色调 -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_variant</item>
+        <item name="colorOnPrimary">@color/on_primary</item>
+        <item name="colorPrimaryContainer">@color/primary_100</item>
+        <item name="colorOnPrimaryContainer">@color/primary_900</item>
+
+        <!-- 次要色 -->
+        <item name="colorSecondary">@color/primary_100</item>
+        <item name="colorSecondaryVariant">@color/primary_200</item>
+        <item name="colorOnSecondary">@color/primary_700</item>
+        <item name="colorSecondaryContainer">@color/primary_50</item>
+        <item name="colorOnSecondaryContainer">@color/primary_800</item>
+
+        <!-- 背景和表面 -->
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/on_surface</item>
+        <item name="colorSurfaceVariant">@color/slate_100</item>
+        <item name="colorOnSurfaceVariant">@color/slate_600</item>
+
+        <!-- 错误色 -->
+        <item name="colorError">@color/error</item>
+        <item name="colorOnError">@color/on_error</item>
+        <item name="colorErrorContainer">@color/danger_light</item>
+        <item name="colorOnErrorContainer">@color/danger_dark</item>
+
+        <!-- 轮廓色 -->
+        <item name="colorOutline">@color/slate_300</item>
+        <item name="colorOutlineVariant">@color/slate_200</item>
+
+        <!-- 状态栏和导航栏 -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/nav_background</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+
+        <!-- Material 组件样式 -->
+        <item name="materialButtonStyle">@style/Widget.EmoBit.Button</item>
+        <item name="materialCardViewStyle">@style/Widget.EmoBit.CardView</item>
+        <item name="textInputStyle">@style/Widget.EmoBit.TextInputLayout</item>
+        <item name="bottomNavigationStyle">@style/Widget.EmoBit.BottomNavigation</item>
+    </style>
+
+    <!-- 启动页主题 -->
+    <style name="Theme.EmoBit.Splash" parent="Theme.EmoBit">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+        <item name="postSplashScreenTheme">@style/Theme.EmoBit</item>
+    </style>
+
+    <!-- 全屏主题 -->
+    <style name="Theme.EmoBit.FullScreen" parent="Theme.EmoBit">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+
+    <!-- 适老化按钮样式 -->
+    <style name="Widget.EmoBit.Button" parent="Widget.Material3.Button">
+        <item name="android:minHeight">@dimen/btn_elder_height</item>
+        <item name="android:paddingStart">@dimen/btn_elder_padding_horizontal</item>
+        <item name="android:paddingEnd">@dimen/btn_elder_padding_horizontal</item>
+        <item name="android:textSize">@dimen/text_elder_lg</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="cornerRadius">@dimen/radius_elder</item>
+        <item name="backgroundTint">@color/primary</item>
+    </style>
+
+    <!-- 主要按钮 -->
+    <style name="Widget.EmoBit.Button.Primary" parent="Widget.EmoBit.Button">
+        <item name="backgroundTint">@color/primary</item>
+        <item name="android:textColor">@color/text_on_primary</item>
+    </style>
+
+    <!-- 次要按钮 -->
+    <style name="Widget.EmoBit.Button.Secondary" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:minHeight">@dimen/btn_elder_height</item>
+        <item name="android:paddingStart">@dimen/btn_elder_padding_horizontal</item>
+        <item name="android:paddingEnd">@dimen/btn_elder_padding_horizontal</item>
+        <item name="android:textSize">@dimen/text_elder_lg</item>
+        <item name="android:textColor">@color/primary_600</item>
+        <item name="cornerRadius">@dimen/radius_elder</item>
+        <item name="strokeColor">@color/primary_300</item>
+        <item name="strokeWidth">@dimen/border_width</item>
+    </style>
+
+    <!-- 危险按钮 -->
+    <style name="Widget.EmoBit.Button.Danger" parent="Widget.EmoBit.Button">
+        <item name="backgroundTint">@color/danger</item>
+        <item name="android:textColor">@color/text_on_primary</item>
+    </style>
+
+    <!-- 安全按钮 -->
+    <style name="Widget.EmoBit.Button.Safe" parent="Widget.EmoBit.Button">
+        <item name="backgroundTint">@color/safe</item>
+        <item name="android:textColor">@color/text_on_primary</item>
+    </style>
+
+    <!-- 卡片样式 -->
+    <style name="Widget.EmoBit.CardView" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardCornerRadius">@dimen/card_radius</item>
+        <item name="cardElevation">@dimen/card_elevation</item>
+        <item name="contentPadding">@dimen/card_padding</item>
+        <item name="cardBackgroundColor">@color/surface</item>
+    </style>
+
+    <!-- 输入框样式 -->
+    <style name="Widget.EmoBit.TextInputLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusTopStart">@dimen/radius_elder</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/radius_elder</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/radius_elder</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/radius_elder</item>
+        <item name="boxStrokeColor">@color/border_focused</item>
+        <item name="hintTextColor">@color/text_hint</item>
+    </style>
+
+    <!-- 底部导航栏样式 -->
+    <style name="Widget.EmoBit.BottomNavigation" parent="Widget.Material3.BottomNavigationView">
+        <item name="android:background">@color/nav_background</item>
+        <item name="itemIconTint">@color/nav_item_color</item>
+        <item name="itemTextColor">@color/nav_item_color</item>
+        <item name="labelVisibilityMode">labeled</item>
+        <item name="itemIconSize">@dimen/nav_icon_size</item>
+        <item name="itemPaddingTop">@dimen/nav_item_padding</item>
+        <item name="itemPaddingBottom">@dimen/nav_item_padding</item>
+    </style>
+
+    <!-- 基础 Widget 样式 -->
+    <style name="Widget.EmoBit" parent="android:Widget" />
+
+    <!-- 基础文字样式 - 适老化 -->
+    <style name="TextAppearance.EmoBit" parent="TextAppearance.Material3.BodyLarge" />
+    
+    <style name="TextAppearance.EmoBit.Elder" parent="TextAppearance.EmoBit">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:lineSpacingMultiplier">1.5</item>
+    </style>
+
+    <style name="TextAppearance.EmoBit.Elder.XS" parent="TextAppearance.EmoBit.Elder">
+        <item name="android:textSize">@dimen/text_elder_xs</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:lineSpacingMultiplier">1.5</item>
+    </style>
+
+    <style name="TextAppearance.EmoBit.Elder.SM" parent="TextAppearance.EmoBit.Elder">
+        <item name="android:textSize">@dimen/text_elder_sm</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:lineSpacingMultiplier">1.6</item>
+    </style>
+
+    <style name="TextAppearance.EmoBit.Elder.Base" parent="TextAppearance.EmoBit.Elder">
+        <item name="android:textSize">@dimen/text_elder_base</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:lineSpacingMultiplier">1.7</item>
+    </style>
+
+    <style name="TextAppearance.EmoBit.Elder.LG" parent="TextAppearance.EmoBit.Elder">
+        <item name="android:textSize">@dimen/text_elder_lg</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:lineSpacingMultiplier">1.6</item>
+    </style>
+
+    <style name="TextAppearance.EmoBit.Elder.XL" parent="TextAppearance.EmoBit.Elder">
+        <item name="android:textSize">@dimen/text_elder_xl</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:lineSpacingMultiplier">1.5</item>
+    </style>
+
+    <style name="TextAppearance.EmoBit.Elder.2XL" parent="TextAppearance.EmoBit.Elder">
+        <item name="android:textSize">@dimen/text_elder_2xl</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:lineSpacingMultiplier">1.4</item>
+    </style>
+
+    <style name="TextAppearance.EmoBit.Elder.3XL" parent="TextAppearance.EmoBit.Elder">
+        <item name="android:textSize">@dimen/text_elder_3xl</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:lineSpacingMultiplier">1.3</item>
+    </style>
+
+    <!-- 健康状态卡片样式 -->
+    <style name="Widget.EmoBit.HealthCard" parent="Widget.EmoBit">
+        <item name="android:background">@drawable/bg_health_card</item>
+        <item name="android:padding">@dimen/spacing_md</item>
+    </style>
+
+    <!-- 对话框样式 -->
+    <style name="Theme.EmoBit.Dialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.EmoBit.Dialog</item>
+        <item name="materialAlertDialogTitleTextStyle">@style/TextAppearance.EmoBit.Elder.XL</item>
+        <item name="materialAlertDialogBodyTextStyle">@style/TextAppearance.EmoBit.Elder.Base</item>
+    </style>
+
+    <style name="ShapeAppearance.EmoBit.Dialog" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/radius_elder_lg</item>
+    </style>
+</resources>

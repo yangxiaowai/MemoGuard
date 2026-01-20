@@ -1,0 +1,65 @@
+<navigation
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/nav_elder"
+app:startDestination="@id/elderHomeFragment" >
+
+<!-- 首页 -->
+<fragment
+    android:id="@+id/elderHomeFragment"
+    android:name="com.emobit.yishou.ui.elder.ElderHomeFragment"
+    android:label="@string/nav_home"
+    tools:layout="@layout/fragment_elder_home" >
+
+    <action
+        android:id="@+id/action_home_to_findItem"
+        app:destination="@id/elderFindItemFragment" />
+    <action
+        android:id="@+id/action_home_to_memory"
+        app:destination="@id/elderMemoryFragment" />
+
+</fragment>
+
+<!-- 导航 -->
+<fragment
+    android:id="@+id/elderNavigationFragment"
+    android:name="com.emobit.yishou.ui.elder.ElderNavigationFragment"
+    android:label="@string/nav_navigation"
+    tools:layout="@layout/fragment_elder_navigation" />
+
+<!-- 服药 -->
+<fragment
+    android:id="@+id/elderMedicationFragment"
+    android:name="com.emobit.yishou.ui.elder.ElderMedicationFragment"
+    android:label="@string/nav_medication"
+    tools:layout="@layout/fragment_elder_medication" />
+
+<!-- 聊天 -->
+<fragment
+    android:id="@+id/elderChatFragment"
+    android:name="com.emobit.yishou.ui.elder.ElderChatFragment"
+    android:label="@string/nav_chat"
+    tools:layout="@layout/fragment_elder_chat" />
+
+<!-- 寻物 -->
+<fragment
+    android:id="@+id/elderFindItemFragment"
+    android:name="com.emobit.yishou.ui.elder.ElderFindItemFragment"
+    android:label="@string/action_find_item"
+    tools:layout="@layout/fragment_elder_find_item" />
+
+<!-- 记忆唤醒 -->
+<fragment
+    android:id="@+id/elderMemoryFragment"
+    android:name="com.emobit.yishou.ui.elder.ElderMemoryFragment"
+    android:label="@string/action_memory"
+    tools:layout="@layout/fragment_elder_memory" />
+
+<!-- 设置 -->
+<fragment
+    android:id="@+id/elderSettingsFragment"
+    android:name="com.emobit.yishou.ui.elder.ElderSettingsFragment"
+    android:label="@string/settings_title"
+    tools:layout="@layout/fragment_elder_settings" />
+</navigation>

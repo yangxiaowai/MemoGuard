@@ -1,0 +1,78 @@
+[
+    {
+        "merged": "com.emobit.yishou.app-mergeDebugResources-71:/layout/fragment_family_alerts.xml",
+        "source": "com.emobit.yishou.app-main-74:/layout/fragment_family_alerts.xml"
+    },
+    {
+        "merged": "com.emobit.yishou.app-mergeDebugResources-71:/layout/activity_medication_verify.xml",
+        "source": "com.emobit.yishou.app-main-74:/layout/activity_medication_verify.xml"
+    },
+    {
+        "merged": "com.emobit.yishou.app-mergeDebugResources-71:/layout/fragment_elder_settings.xml",
+        "source": "com.emobit.yishou.app-main-74:/layout/fragment_elder_settings.xml"
+    },
+    {
+        "merged": "com.emobit.yishou.app-mergeDebugResources-71:/layout/fragment_family_dashboard.xml",
+        "source": "com.emobit.yishou.app-main-74:/layout/fragment_family_dashboard.xml"
+    },
+    {
+        "merged": "com.emobit.yishou.app-mergeDebugResources-71:/layout/fragment_family_reports.xml",
+        "source": "com.emobit.yishou.app-main-74:/layout/fragment_family_reports.xml"
+    },
+    {
+        "merged": "com.emobit.yishou.app-mergeDebugResources-71:/layout/fragment_elder_home.xml",
+        "source": "com.emobit.yishou.app-main-74:/layout/fragment_elder_home.xml"
+    },
+    {
+        "merged": "com.emobit.yishou.app-mergeDebugResources-71:/layout/fragment_elder_medication.xml",
+        "source": "com.emobit.yishou.app-main-74:/layout/fragment_elder_medication.xml"
+    },
+    {
+        "merged": "com.emobit.yishou.app-mergeDebugResources-71:/layout/activity_elder_main.xml",
+        "source": "com.emobit.yishou.app-main-74:/layout/activity_elder_main.xml"
+    },
+    {
+        "merged": "com.emobit.yishou.app-mergeDebugResources-71:/layout/fragment_elder_chat.xml",
+        "source": "com.emobit.yishou.app-main-74:/layout/fragment_elder_chat.xml"
+    },
+    {
+        "merged": "com.emobit.yishou.app-mergeDebugResources-71:/layout/fragment_family_settings.xml",
+        "source": "com.emobit.yishou.app-main-74:/layout/fragment_family_settings.xml"
+    },
+    {
+        "merged": "com.emobit.yishou.app-mergeDebugResources-71:/layout/item_report_category.xml",
+        "source": "com.emobit.yishou.app-main-74:/layout/item_report_category.xml"
+    },
+    {
+        "merged": "com.emobit.yishou.app-mergeDebugResources-71:/layout/activity_emergency.xml",
+        "source": "com.emobit.yishou.app-main-74:/layout/activity_emergency.xml"
+    },
+    {
+        "merged": "com.emobit.yishou.app-mergeDebugResources-71:/layout/activity_ar_navigation.xml",
+        "source": "com.emobit.yishou.app-main-74:/layout/activity_ar_navigation.xml"
+    },
+    {
+        "merged": "com.emobit.yishou.app-mergeDebugResources-71:/layout/fragment_elder_find_item.xml",
+        "source": "com.emobit.yishou.app-main-74:/layout/fragment_elder_find_item.xml"
+    },
+    {
+        "merged": "com.emobit.yishou.app-mergeDebugResources-71:/layout/fragment_family_location.xml",
+        "source": "com.emobit.yishou.app-main-74:/layout/fragment_family_location.xml"
+    },
+    {
+        "merged": "com.emobit.yishou.app-mergeDebugResources-71:/layout/fragment_elder_memory.xml",
+        "source": "com.emobit.yishou.app-main-74:/layout/fragment_elder_memory.xml"
+    },
+    {
+        "merged": "com.emobit.yishou.app-mergeDebugResources-71:/layout/activity_role_selector.xml",
+        "source": "com.emobit.yishou.app-main-74:/layout/activity_role_selector.xml"
+    },
+    {
+        "merged": "com.emobit.yishou.app-mergeDebugResources-71:/layout/fragment_elder_navigation.xml",
+        "source": "com.emobit.yishou.app-main-74:/layout/fragment_elder_navigation.xml"
+    },
+    {
+        "merged": "com.emobit.yishou.app-mergeDebugResources-71:/layout/activity_family_main.xml",
+        "source": "com.emobit.yishou.app-main-74:/layout/activity_family_main.xml"
+    }
+]

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 应用名称 -->
+    <string name="app_name">EmoBit·忆守</string>
+    <string name="app_slogan">您的智能健康守护伙伴</string>
+    <string name="app_description">基于时空智能与数字孪生的认知障碍代偿系统</string>
+
+    <!-- 角色选择页面 -->
+    <string name="role_elder">我是长辈</string>
+    <string name="role_elder_desc">开始使用智能健康守护功能</string>
+    <string name="role_family">我是家属</string>
+    <string name="role_family_desc">远程监护与关爱家中长辈</string>
+
+    <!-- 底部导航 - 老人端 -->
+    <string name="nav_home">首页</string>
+    <string name="nav_navigation">导航</string>
+    <string name="nav_medication">服药</string>
+    <string name="nav_chat">聊天</string>
+
+    <!-- 底部导航 - 子女端 -->
+    <string name="nav_dashboard">概览</string>
+    <string name="nav_location">位置</string>
+    <string name="nav_reports">报告</string>
+    <string name="nav_alerts">预警</string>
+    <string name="nav_settings">设置</string>
+
+    <!-- 首页问候语 -->
+    <string name="greeting_morning">早上好！新的一天开始了</string>
+    <string name="greeting_noon">中午好！该吃午饭了</string>
+    <string name="greeting_afternoon">下午好！记得多走动走动</string>
+    <string name="greeting_evening">晚上好！今天过得开心吗？</string>
+    <string name="greeting_night">夜深了，早点休息哦</string>
+
+    <!-- 健康指标 -->
+    <string name="health_heart_rate">心率</string>
+    <string name="health_blood_oxygen">血氧</string>
+    <string name="health_steps">今日步数</string>
+    <string name="health_sleep">昨晚睡眠</string>
+    <string name="unit_bpm">次/分</string>
+    <string name="unit_percent">%</string>
+    <string name="unit_steps">步</string>
+    <string name="unit_hours">小时</string>
+
+    <!-- 快捷功能 -->
+    <string name="quick_actions">快捷功能</string>
+    <string name="action_go_home">回家导航</string>
+    <string name="action_go_home_desc">点击开启</string>
+    <string name="action_medication">服药提醒</string>
+    <string name="action_medication_desc">今日待服%d次</string>
+    <string name="action_find_item">找东西</string>
+    <string name="action_find_item_desc">钥匙、眼镜…</string>
+    <string name="action_memory">忆往昔</string>
+    <string name="action_memory_desc">看看老照片</string>
+
+    <!-- AR导航 -->
+    <string name="nav_destination">目的地</string>
+    <string name="nav_go_home">回家</string>
+    <string name="nav_distance">预计距离</string>
+    <string name="nav_time">预计时间</string>
+    <string name="nav_start">开始导航</string>
+    <string name="nav_end">结束导航</string>
+    <string name="nav_remaining">剩余 %d 米</string>
+    <string name="nav_eta">约 %d 分钟</string>
+    <string name="nav_arrived">到家啦！</string>
+    <string name="nav_arrived_desc">太棒了！您安全到家了</string>
+    <string name="nav_wandering_detected">检测到您在原地徘徊</string>
+    <string name="nav_wandering_help">是不是迷路了？我来帮您</string>
+    <string name="nav_continue">继续导航</string>
+    <string name="nav_call_family">呼叫家人</string>
+
+    <!-- 服药管理 -->
+    <string name="medication_title">服药管理</string>
+    <string name="medication_today">今日服药</string>
+    <string name="medication_pending">待服 %d 次</string>
+    <string name="medication_today_list">今日药品</string>
+    <string name="medication_start">开始服药</string>
+    <string name="medication_time_to_take">该吃 %s 啦</string>
+    <string name="medication_ready">我准备好了</string>
+    <string name="medication_detecting">正在识别药盒…</string>
+    <string name="medication_action_title">请完成服药动作</string>
+    <string name="medication_step_1">取出药片</string>
+    <string name="medication_step_2">抬手送入口中</string>
+    <string name="medication_step_3">吞咽</string>
+    <string name="medication_taken">我已服用</string>
+    <string name="medication_success">太棒了！</string>
+    <string name="medication_success_desc">服药记录已保存</string>
+    <string name="medication_later">稍后再说</string>
+    <string name="medication_done">完成</string>
+
+    <!-- 寻物辅助 -->
+    <string name="find_item_title">找东西</string>
+    <string name="find_item_prompt">找不到东西了？</string>
+    <string name="find_item_prompt_desc">我记得您把它们放在哪里了</string>
+    <string name="find_item_remembered">我帮您记着的东西</string>
+    <string name="find_item_found">找到了！</string>
+    <string name="find_item_your">您的%s</string>
+    <string name="find_item_confidence">可信度 %d%%</string>
+    <string name="find_item_last_seen">最后看到：%s</string>
+    <string name="find_item_view_image">查看当时的画面</string>
+    <string name="find_item_confirmed">我找到了</string>
+    <string name="find_item_not_there">不在那里</string>
+    <string name="find_item_voice_hint">说出您要找的东西</string>
+    <string name="find_item_voice_example">例如："我的眼镜在哪？"</string>
+
+    <!-- 记忆唤醒 -->
+    <string name="memory_title">忆往昔</string>
+    <string name="memory_landmark_nearby">发现附近的回忆</string>
+    <string name="memory_prompt">想看看老照片吗？</string>
+    <string name="memory_prompt_desc">我帮您保存了很多美好回忆</string>
+    <string name="memory_good_times">美好时光</string>
+    <string name="memory_listen">听听%s说</string>
+    <string name="memory_pause">暂停</string>
+
+    <!-- 语音对话 -->
+    <string name="chat_title">小忆</string>
+    <string name="chat_online">在线</string>
+    <string name="chat_hint">输入消息…</string>
+    <string name="chat_tap_to_speak">点击麦克风或直接说话</string>
+    <string name="chat_listening">正在聆听…请说话</string>
+    <string name="chat_quick_happy">今天很开心</string>
+    <string name="chat_quick_walk">想出去走走</string>
+    <string name="chat_quick_photo">看看老照片</string>
+    <string name="chat_quick_tired">有点累了</string>
+
+    <!-- 紧急求助 -->
+    <string name="emergency_title">紧急求助</string>
+    <string name="emergency_prompt">遇到紧急情况时按下按钮</string>
+    <string name="emergency_sos">SOS</string>
+    <string name="emergency_hold_hint">长按 3 秒触发紧急呼叫</string>
+    <string name="emergency_fall_detected">检测到您可能摔倒了</string>
+    <string name="emergency_are_you_ok">您还好吗？</string>
+    <string name="emergency_auto_call">%d 秒后自动呼叫家人</string>
+    <string name="emergency_im_fine">我没事</string>
+    <string name="emergency_call_now">立即呼叫</string>
+    <string name="emergency_calling">正在呼叫家人</string>
+    <string name="emergency_connected">已接通</string>
+    <string name="emergency_call_duration">通话中 %s</string>
+    <string name="emergency_location_shared">您的位置已分享：%s</string>
+    <string name="emergency_end_call">结束通话</string>
+    <string name="emergency_cancel">取消呼叫</string>
+    <string name="emergency_great">太好了！</string>
+    <string name="emergency_glad_safe">很高兴您没事，注意安全哦</string>
+    <string name="emergency_contacts">紧急联系人</string>
+
+    <!-- 子女端 - 监护面板 -->
+    <string name="family_status_normal">状态正常</string>
+    <string name="family_in_safe_zone">安全区域内</string>
+    <string name="family_updated_at">更新于 %s</string>
+    <string name="family_health_metrics">健康指标</string>
+    <string name="family_view_details">查看详情</string>
+    <string name="family_quick_location">实时位置</string>
+    <string name="family_quick_location_desc">查看当前位置</string>
+    <string name="family_quick_reports">认知报告</string>
+    <string name="family_quick_reports_desc">本周评估</string>
+    <string name="family_today_activities">今日活动</string>
+    <string name="family_recent_alerts">最近预警</string>
+    <string name="family_view_all">全部</string>
+    <string name="family_resolved">已处理</string>
+
+    <!-- 子女端 - 位置追踪 -->
+    <string name="location_realtime">实时追踪</string>
+    <string name="location_refresh">刷新位置</string>
+    <string name="location_updated">更新于 %s</string>
+    <string name="location_today_stats">今日统计</string>
+    <string name="location_distance">行走距离</string>
+    <string name="location_outdoor_time">外出时长</string>
+    <string name="location_safe_zone_time">安全区域</string>
+    <string name="location_today_route">今日轨迹</string>
+    <string name="location_safe_zones">安全区域</string>
+    <string name="location_manage">管理</string>
+
+    <!-- 子女端 - 认知报告 -->
+    <string name="report_title">认知功能评分</string>
+    <string name="report_period">每周更新</string>
+    <string name="report_compared">较上周 %s</string>
+    <string name="report_download">下载报告</string>
+    <string name="report_share">分享医生</string>
+    <string name="report_categories">分项评估</string>
+    <string name="report_memory">记忆力</string>
+    <string name="report_language">语言能力</string>
+    <string name="report_spatial">空间感知</string>
+    <string name="report_attention">注意力</string>
+    <string name="report_interaction">互动统计</string>
+    <string name="report_conversations">对话次数</string>
+    <string name="report_ar_nav">AR导航</string>
+    <string name="report_medication_rate">按时服药</string>
+    <string name="report_improvements">进步</string>
+    <string name="report_concerns">关注</string>
+    <string name="report_ai_suggestions">AI 建议</string>
+    <string name="report_history">查看历史报告</string>
+
+    <!-- 子女端 - 预警记录 -->
+    <string name="alert_all">全部</string>
+    <string name="alert_fall">跌倒</string>
+    <string name="alert_wandering">迷路</string>
+    <string name="alert_medication">服药</string>
+    <string name="alert_health">健康</string>
+    <string name="alert_high_risk">高危预警</string>
+    <string name="alert_processed">已处理</string>
+    <string name="alert_rate">处理率</string>
+    <string name="alert_contact_elder">联系长辈</string>
+    <string name="alert_close">关闭</string>
+    <string name="alert_no_records">没有相关预警记录</string>
+
+    <!-- 设置 -->
+    <string name="settings_title">设置</string>
+    <string name="settings_edit">编辑</string>
+    <string name="settings_quick">快捷设置</string>
+    <string name="settings_voice">语音播报</string>
+    <string name="settings_notification">消息通知</string>
+    <string name="settings_dark_mode">夜间模式</string>
+    <string name="settings_personal">个人信息</string>
+    <string name="settings_profile">我的资料</string>
+    <string name="settings_address">家庭地址</string>
+    <string name="settings_health">健康信息</string>
+    <string name="settings_device">设备连接</string>
+    <string name="settings_watch">OPPO 手表</string>
+    <string name="settings_connected">已连接</string>
+    <string name="settings_permissions">手机权限</string>
+    <string name="settings_emergency">紧急联系</string>
+    <string name="settings_emergency_contacts">紧急联系人</string>
+    <string name="settings_safe_zones">安全区域</string>
+    <string name="settings_help">帮助与支持</string>
+    <string name="settings_guide">使用指南</string>
+    <string name="settings_about">关于忆守</string>
+    <string name="settings_logout">退出登录</string>
+
+    <!-- 子女端设置 -->
+    <string name="settings_guard_target">守护对象</string>
+    <string name="settings_notifications">通知设置</string>
+    <string name="settings_alert_notify">紧急预警通知</string>
+    <string name="settings_alert_notify_desc">跌倒、迷路等紧急情况</string>
+    <string name="settings_daily_report">每日报告推送</string>
+    <string name="settings_daily_report_desc">每天 21:00 推送</string>
+    <string name="settings_med_notify">服药提醒同步</string>
+    <string name="settings_med_notify_desc">同步接收服药通知</string>
+    <string name="settings_location_notify">位置变化通知</string>
+    <string name="settings_location_notify_desc">离开/进入安全区域时</string>
+    <string name="settings_security">安全设置</string>
+    <string name="settings_safe_zone_manage">安全区域管理</string>
+    <string name="settings_first_contact">您是第一联系人</string>
+    <string name="settings_alert_sensitivity">预警灵敏度</string>
+    <string name="settings_standard_mode">标准模式</string>
+    <string name="settings_device_manage">设备管理</string>
+    <string name="settings_bound_device">绑定设备</string>
+    <string name="settings_voice_settings">语音设置</string>
+    <string name="settings_voice_pack">语音包：%s</string>
+
+    <!-- 通用 -->
+    <string name="btn_confirm">确定</string>
+    <string name="btn_cancel">取消</string>
+    <string name="btn_back">返回</string>
+    <string name="btn_next">下一步</string>
+    <string name="btn_skip">跳过</string>
+    <string name="btn_done">完成</string>
+    <string name="btn_save">保存</string>
+    <string name="btn_retry">重试</string>
+    <string name="loading">加载中…</string>
+    <string name="error_network">网络连接失败，请检查网络设置</string>
+    <string name="error_unknown">发生未知错误</string>
+    <string name="just_now">刚刚</string>
+    <string name="minutes_ago">%d分钟前</string>
+    <string name="hours_ago">%d小时前</string>
+    <string name="yesterday">昨天</string>
+</resources>

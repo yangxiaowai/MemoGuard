@@ -1,0 +1,38 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.emobit.yishou.app-mergeDebugResources-70:/values-v16/values-v16.xml",
+            "map": [
+                {
+                    "source": "/Users/yangjun/.gradle/caches/transforms-4/5cebe3c970e18c2c5ef3a3084cc0427e/transformed/core-1.12.0/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                },
+                {
+                    "source": "/Users/yangjun/.gradle/caches/transforms-4/6d451d2d86f340985b1145984ac870a4/transformed/appcompat-1.6.1/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "121",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "289"
+                    }
+                }
+            ]
+        }
+    ]
+}
