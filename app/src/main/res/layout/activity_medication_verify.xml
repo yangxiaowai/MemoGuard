@@ -1,200 +1,434 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background">
 
-    <!-- 返回按钮 -->
-    <ImageButton
-        android:id="@+id/btnBack"
-        android:layout_width="56dp"
-        android:layout_height="56dp"
-        android:layout_margin="@dimen/spacing_md"
-        android:background="@drawable/bg_circle_slate_light"
-        android:src="@drawable/ic_chevron_left"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:tint="@color/slate_600" />
-
-    <!-- 标题 -->
-    <TextView
-        android:id="@+id/tvTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="服药验证"
-        android:textAppearance="@style/TextAppearance.EmoBit.Elder.XL"
-        app:layout_constraintBottom_toBottomOf="@id/btnBack"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/btnBack" />
-
-    <!-- 数字人 -->
-    <FrameLayout
-        android:id="@+id/avatarContainer"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="@dimen/spacing_xl"
-        android:background="@drawable/bg_avatar_container"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btnBack">
-
-        <ImageView
-            android:layout_width="72dp"
-            android:layout_height="72dp"
-            android:layout_gravity="center"
-            android:src="@drawable/ic_avatar_placeholder" />
-    </FrameLayout>
-
-    <!-- 提示语 -->
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/cardPrompt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/spacing_md"
-        app:cardBackgroundColor="@color/surface"
-        app:cardCornerRadius="@dimen/radius_elder"
-        app:cardElevation="4dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/avatarContainer">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingHorizontal="@dimen/spacing_lg"
-            android:paddingVertical="@dimen/spacing_md"
-            android:text="该吃降压药啦！\n我陪着您"
-            android:textAlignment="center"
-            android:textAppearance="@style/TextAppearance.EmoBit.Elder.LG"
-            android:textColor="@color/text_primary" />
-    </com.google.android.material.card.MaterialCardView>
-
-    <!-- 步骤指示 -->
+    <!-- 顶部工具栏 -->
     <LinearLayout
-        android:id="@+id/stepsContainer"
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/spacing_lg"
-        android:layout_marginTop="@dimen/spacing_xl"
-        android:orientation="vertical"
-        app:layout_constraintTop_toBottomOf="@id/cardPrompt">
+        android:background="@color/surface"
+        android:elevation="4dp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/spacing_md"
+        android:paddingVertical="@dimen/spacing_md"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_circle_slate_light"
+            android:src="@drawable/ic_chevron_left"
+            app:tint="@color/slate_600" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/tvTitle"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="@string/medication_action_title"
-            android:textAppearance="@style/TextAppearance.EmoBit.Elder.LG"
+            android:layout_marginStart="@dimen/spacing_md"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="服药验证"
+            android:textAppearance="@style/TextAppearance.EmoBit.Elder.XL"
             android:textColor="@color/text_primary"
             android:textStyle="bold" />
-
-        <!-- 步骤1 -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/spacing_md"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
-
-            <FrameLayout
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:background="@drawable/bg_circle_safe">
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/ic_check"
-                    app:tint="@color/text_on_primary" />
-            </FrameLayout>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/spacing_md"
-                android:text="@string/medication_step_1"
-                android:textAppearance="@style/TextAppearance.EmoBit.Elder.Base"
-                android:textColor="@color/safe" />
-        </LinearLayout>
-
-        <!-- 步骤2 -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/spacing_md"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
-
-            <FrameLayout
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:background="@drawable/bg_circle_primary_light">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="2"
-                    android:textColor="@color/primary"
-                    android:textSize="@dimen/text_lg"
-                    android:textStyle="bold" />
-            </FrameLayout>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/spacing_md"
-                android:text="@string/medication_step_2"
-                android:textAppearance="@style/TextAppearance.EmoBit.Elder.Base"
-                android:textColor="@color/primary" />
-        </LinearLayout>
-
-        <!-- 步骤3 -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/spacing_md"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
-
-            <FrameLayout
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:background="@drawable/bg_circle_slate_light">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="3"
-                    android:textColor="@color/slate_500"
-                    android:textSize="@dimen/text_lg"
-                    android:textStyle="bold" />
-            </FrameLayout>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/spacing_md"
-                android:text="@string/medication_step_3"
-                android:textAppearance="@style/TextAppearance.EmoBit.Elder.Base"
-                android:textColor="@color/slate_500" />
-        </LinearLayout>
     </LinearLayout>
 
-    <!-- 完成按钮 -->
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnComplete"
+    <!-- 摄像头预览区域 -->
+    <FrameLayout
+        android:id="@+id/cameraPreviewContainer"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/btn_elder_height"
-        android:layout_marginHorizontal="@dimen/spacing_lg"
-        android:layout_marginBottom="@dimen/spacing_xl"
-        android:text="@string/medication_taken"
-        android:textAppearance="@style/TextAppearance.EmoBit.Elder.LG"
-        app:backgroundTint="@color/safe"
-        app:cornerRadius="@dimen/radius_elder"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        android:layout_height="0dp"
+        android:background="@color/slate_900"
+        app:layout_constraintHeight_percent="0.45"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <!-- CameraX 预览视图 -->
+        <androidx.camera.view.PreviewView
+            android:id="@+id/cameraPreview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter" />
+
+        <!-- 识别状态遮罩层 -->
+        <FrameLayout
+            android:id="@+id/overlayContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- 识别框指示器 -->
+            <View
+                android:id="@+id/detectionFrame"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_detection_frame"
+                android:visibility="visible" />
+
+            <!-- 识别状态提示 -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardDetectionStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="100dp"
+                android:visibility="visible"
+                app:cardBackgroundColor="#CC000000"
+                app:cardCornerRadius="@dimen/radius_elder"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing_lg">
+
+                    <ImageView
+                        android:id="@+id/ivDetectionIcon"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/ic_search"
+                        app:tint="@color/primary" />
+
+                    <TextView
+                        android:id="@+id/tvDetectionStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_sm"
+                        android:text="正在识别药盒..."
+                        android:textAppearance="@style/TextAppearance.EmoBit.Elder.LG"
+                        android:textColor="@color/text_on_primary"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </FrameLayout>
+
+        <!-- 提示文字（底部） -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/bg_gradient_overlay_bottom"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_lg">
+
+            <TextView
+                android:id="@+id/tvCameraHint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="请将药盒对准识别框"
+                android:textAppearance="@style/TextAppearance.EmoBit.Elder.Base"
+                android:textColor="@color/text_on_primary"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- 步骤指示区域 -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cameraPreviewContainer">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_lg">
+
+            <!-- 提示卡片 -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardPrompt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_md"
+                app:cardBackgroundColor="@color/surface"
+                app:cardCornerRadius="@dimen/radius_elder_lg"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing_lg">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:src="@drawable/ic_pill"
+                        app:tint="@color/primary" />
+
+                    <TextView
+                        android:id="@+id/tvPromptText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_md"
+                        android:gravity="center"
+                        android:text="该吃降压药啦！\n我陪着您"
+                        android:textAppearance="@style/TextAppearance.EmoBit.Elder.LG"
+                        android:textColor="@color/text_primary"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- 动作识别步骤 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/medication_action_title"
+                android:textAppearance="@style/TextAppearance.EmoBit.Elder.LG"
+                android:textColor="@color/text_primary"
+                android:textStyle="bold" />
+
+            <!-- 步骤1: 识别药盒 -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardStep1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_md"
+                app:cardBackgroundColor="@color/safe_50"
+                app:cardCornerRadius="@dimen/radius_elder_lg"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/spacing_lg">
+
+                    <FrameLayout
+                        android:id="@+id/step1Icon"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="@drawable/bg_circle_safe">
+
+                        <ImageView
+                            android:id="@+id/ivStep1Check"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_check"
+                            android:visibility="visible"
+                            app:tint="@color/text_on_primary" />
+
+                        <TextView
+                            android:id="@+id/tvStep1Number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="1"
+                            android:textAppearance="@style/TextAppearance.EmoBit.Elder.LG"
+                            android:textColor="@color/text_on_primary"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/spacing_md"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/medication_step_1"
+                            android:textAppearance="@style/TextAppearance.EmoBit.Elder.Base"
+                            android:textColor="@color/text_primary"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvStep1Status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/spacing_xxs"
+                            android:text="药盒识别中..."
+                            android:textAppearance="@style/TextAppearance.EmoBit.Elder.SM"
+                            android:textColor="@color/text_secondary" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- 步骤2: 抬手送入口中 -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardStep2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_md"
+                app:cardBackgroundColor="@color/surface"
+                app:cardCornerRadius="@dimen/radius_elder_lg"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/spacing_lg">
+
+                    <FrameLayout
+                        android:id="@+id/step2Icon"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="@drawable/bg_circle_primary_light">
+
+                        <ImageView
+                            android:id="@+id/ivStep2Check"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_check"
+                            android:visibility="gone"
+                            app:tint="@color/primary" />
+
+                        <TextView
+                            android:id="@+id/tvStep2Number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="2"
+                            android:textAppearance="@style/TextAppearance.EmoBit.Elder.LG"
+                            android:textColor="@color/primary"
+                            android:textStyle="bold"
+                            android:visibility="visible" />
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/spacing_md"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/medication_step_2"
+                            android:textAppearance="@style/TextAppearance.EmoBit.Elder.Base"
+                            android:textColor="@color/text_primary"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvStep2Status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/spacing_xxs"
+                            android:text="等待动作..."
+                            android:textAppearance="@style/TextAppearance.EmoBit.Elder.SM"
+                            android:textColor="@color/text_secondary" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- 步骤3: 吞咽动作 -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardStep3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_md"
+                app:cardBackgroundColor="@color/slate_50"
+                app:cardCornerRadius="@dimen/radius_elder_lg"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/spacing_lg">
+
+                    <FrameLayout
+                        android:id="@+id/step3Icon"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="@drawable/bg_circle_slate_light">
+
+                        <ImageView
+                            android:id="@+id/ivStep3Check"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_check"
+                            android:visibility="gone"
+                            app:tint="@color/slate_500" />
+
+                        <TextView
+                            android:id="@+id/tvStep3Number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="3"
+                            android:textAppearance="@style/TextAppearance.EmoBit.Elder.LG"
+                            android:textColor="@color/slate_500"
+                            android:textStyle="bold"
+                            android:visibility="visible" />
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/spacing_md"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/medication_step_3"
+                            android:textAppearance="@style/TextAppearance.EmoBit.Elder.Base"
+                            android:textColor="@color/text_primary"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvStep3Status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/spacing_xxs"
+                            android:text="等待动作..."
+                            android:textAppearance="@style/TextAppearance.EmoBit.Elder.SM"
+                            android:textColor="@color/text_secondary" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- 完成按钮 -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnComplete"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_elder_height"
+                android:layout_marginTop="@dimen/spacing_xl"
+                android:enabled="false"
+                android:text="@string/medication_taken"
+                android:textAppearance="@style/TextAppearance.EmoBit.Elder.LG"
+                android:textColor="@color/text_on_primary"
+                app:backgroundTint="@color/safe"
+                app:cornerRadius="@dimen/radius_elder" />
+
+            <!-- 稍后再说按钮 -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLater"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_elder_height"
+                android:layout_marginTop="@dimen/spacing_md"
+                android:text="@string/medication_later"
+                android:textAppearance="@style/TextAppearance.EmoBit.Elder.Base"
+                android:textColor="@color/text_secondary"
+                app:backgroundTint="@color/slate_50"
+                app:cornerRadius="@dimen/radius_elder"
+                app:strokeColor="@color/slate_300"
+                app:strokeWidth="1dp" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -19,11 +19,13 @@
     <color name="primary_variant">@color/primary_600</color>
 
     <!-- 安全状态色 - 绿色 -->
+    <color name="safe_50">#F0FDF4</color>
     <color name="safe_light">#DCFCE7</color>
     <color name="safe">#22C55E</color>
     <color name="safe_dark">#166534</color>
 
     <!-- 警告状态色 - 琥珀色 -->
+    <color name="warning_50">#FFFBEB</color>
     <color name="warning_light">#FEF3C7</color>
     <color name="warning">#F59E0B</color>
     <color name="warning_dark">#92400E</color>
@@ -96,4 +98,22 @@
     <color name="blood_oxygen">#3B82F6</color>
     <color name="steps">#22C55E</color>
     <color name="sleep">#6366F1</color>
+    
+    <!-- 紫色系 -->
+    <color name="purple_50">#FAF5FF</color>
+    <color name="purple_100">#F3E8FF</color>
+    <color name="purple_200">#E9D5FF</color>
+    <color name="purple_300">#D8B4FE</color>
+    <color name="purple_400">#C084FC</color>
+    <color name="purple_500">#A855F7</color>
+    <color name="purple_600">#9333EA</color>
+    <color name="purple_700">#7E22CE</color>
+    
+    <!-- 粉色系 -->
+    <color name="pink_500">#EC4899</color>
+    <color name="pink_600">#DB2777</color>
+    
+    <!-- 橙色系 -->
+    <color name="orange_500">#F97316</color>
+    <color name="orange_600">#EA580C</color>
 </resources>

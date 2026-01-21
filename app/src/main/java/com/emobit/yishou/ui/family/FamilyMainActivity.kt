@@ -17,7 +17,7 @@ import dagger.hilt.android.AndroidEntryPoint
 class FamilyMainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityFamilyMainBinding
-    private lateinit var navController: NavController
+    private var navController: NavController? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,13 +29,20 @@ class FamilyMainActivity : AppCompatActivity() {
 
     private fun setupNavigation() {
         val navHostFragment = supportFragmentManager
-            .findFragmentById(R.id.nav_host_fragment_family) as NavHostFragment
+            .findFragmentById(R.id.nav_host_fragment_family) as? NavHostFragment
+        
+        if (navHostFragment == null) {
+            return
+        }
+        
         navController = navHostFragment.navController
 
-        binding.bottomNavigationFamily.setupWithNavController(navController)
+        navController?.let {
+            binding.bottomNavigationFamily.setupWithNavController(it)
+        }
     }
 
     override fun onSupportNavigateUp(): Boolean {
-        return navController.navigateUp() || super.onSupportNavigateUp()
+        return navController?.navigateUp() ?: super.onSupportNavigateUp()
     }
 }

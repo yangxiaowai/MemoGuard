@@ -19,25 +19,36 @@
         android:label="@string/nav_location"
         tools:layout="@layout/fragment_family_location" />
 
-    <!-- 认知报告 -->
+    <!-- AR智能眼镜 -->
     <fragment
-        android:id="@+id/familyReportsFragment"
-        android:name="com.emobit.yishou.ui.family.FamilyReportsFragment"
-        android:label="@string/nav_reports"
-        tools:layout="@layout/fragment_family_reports" />
+        android:id="@+id/familyARFragment"
+        android:name="com.emobit.yishou.ui.family.FamilyARFragment"
+        android:label="@string/nav_ar"
+        tools:layout="@layout/fragment_family_ar" />
 
-    <!-- 预警记录 -->
+    <!-- 紧急求助 -->
     <fragment
-        android:id="@+id/familyAlertsFragment"
-        android:name="com.emobit.yishou.ui.family.FamilyAlertsFragment"
-        android:label="@string/nav_alerts"
-        tools:layout="@layout/fragment_family_alerts" />
+        android:id="@+id/familySOSFragment"
+        android:name="com.emobit.yishou.ui.family.FamilySOSFragment"
+        android:label="@string/nav_sos"
+        tools:layout="@layout/fragment_family_sos" />
 
     <!-- 设置 -->
     <fragment
         android:id="@+id/familySettingsFragment"
         android:name="com.emobit.yishou.ui.family.FamilySettingsFragment"
         android:label="@string/nav_settings"
-        tools:layout="@layout/fragment_family_settings" />
+        tools:layout="@layout/fragment_family_settings">
+        <action
+            android:id="@+id/action_settings_to_medication_settings"
+            app:destination="@id/familyMedicationSettingsFragment" />
+    </fragment>
+
+    <!-- 服药设置 -->
+    <fragment
+        android:id="@+id/familyMedicationSettingsFragment"
+        android:name="com.emobit.yishou.ui.family.FamilyMedicationSettingsFragment"
+        android:label="@string/medication_settings"
+        tools:layout="@layout/fragment_family_medication_settings" />
 
 </navigation>

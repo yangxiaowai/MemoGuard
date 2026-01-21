@@ -171,6 +171,13 @@
         <item name="android:lineSpacingMultiplier">1.5</item>
     </style>
 
+    <style name="TextAppearance.EmoBit.Elder.XXL" parent="TextAppearance.EmoBit.Elder">
+        <item name="android:textSize">@dimen/text_2xl</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:lineSpacingMultiplier">1.4</item>
+    </style>
+
     <style name="TextAppearance.EmoBit.Elder.2XL" parent="TextAppearance.EmoBit.Elder">
         <item name="android:textSize">@dimen/text_elder_2xl</item>
         <item name="android:textColor">@color/text_primary</item>

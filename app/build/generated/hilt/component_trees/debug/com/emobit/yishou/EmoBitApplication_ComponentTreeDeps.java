@@ -19,6 +19,7 @@ import dagger.hilt.processor.internal.definecomponent.codegen._dagger_hilt_andro
 import dagger.hilt.processor.internal.definecomponent.codegen._dagger_hilt_components_SingletonComponent;
 import hilt_aggregated_deps._com_emobit_yishou_EmoBitApplication_GeneratedInjector;
 import hilt_aggregated_deps._com_emobit_yishou_ui_common_RoleSelectorActivity_GeneratedInjector;
+import hilt_aggregated_deps._com_emobit_yishou_ui_elder_AREyeActivity_GeneratedInjector;
 import hilt_aggregated_deps._com_emobit_yishou_ui_elder_ARNavigationActivity_GeneratedInjector;
 import hilt_aggregated_deps._com_emobit_yishou_ui_elder_ElderChatFragment_GeneratedInjector;
 import hilt_aggregated_deps._com_emobit_yishou_ui_elder_ElderFindItemFragment_GeneratedInjector;
@@ -30,11 +31,14 @@ import hilt_aggregated_deps._com_emobit_yishou_ui_elder_ElderNavigationFragment_
 import hilt_aggregated_deps._com_emobit_yishou_ui_elder_ElderSettingsFragment_GeneratedInjector;
 import hilt_aggregated_deps._com_emobit_yishou_ui_elder_EmergencyActivity_GeneratedInjector;
 import hilt_aggregated_deps._com_emobit_yishou_ui_elder_MedicationVerifyActivity_GeneratedInjector;
+import hilt_aggregated_deps._com_emobit_yishou_ui_family_FamilyARFragment_GeneratedInjector;
 import hilt_aggregated_deps._com_emobit_yishou_ui_family_FamilyAlertsFragment_GeneratedInjector;
 import hilt_aggregated_deps._com_emobit_yishou_ui_family_FamilyDashboardFragment_GeneratedInjector;
 import hilt_aggregated_deps._com_emobit_yishou_ui_family_FamilyLocationFragment_GeneratedInjector;
 import hilt_aggregated_deps._com_emobit_yishou_ui_family_FamilyMainActivity_GeneratedInjector;
+import hilt_aggregated_deps._com_emobit_yishou_ui_family_FamilyMedicationSettingsFragment_GeneratedInjector;
 import hilt_aggregated_deps._com_emobit_yishou_ui_family_FamilyReportsFragment_GeneratedInjector;
+import hilt_aggregated_deps._com_emobit_yishou_ui_family_FamilySOSFragment_GeneratedInjector;
 import hilt_aggregated_deps._com_emobit_yishou_ui_family_FamilySettingsFragment_GeneratedInjector;
 import hilt_aggregated_deps._dagger_hilt_android_flags_FragmentGetContextFix_FragmentGetContextFixEntryPoint;
 import hilt_aggregated_deps._dagger_hilt_android_flags_HiltWrapper_FragmentGetContextFix_FragmentGetContextFixModule;
@@ -78,6 +82,7 @@ import hilt_aggregated_deps._dagger_hilt_android_internal_modules_HiltWrapper_Ac
     aggregatedDeps = {
         _com_emobit_yishou_EmoBitApplication_GeneratedInjector.class,
         _com_emobit_yishou_ui_common_RoleSelectorActivity_GeneratedInjector.class,
+        _com_emobit_yishou_ui_elder_AREyeActivity_GeneratedInjector.class,
         _com_emobit_yishou_ui_elder_ARNavigationActivity_GeneratedInjector.class,
         _com_emobit_yishou_ui_elder_ElderChatFragment_GeneratedInjector.class,
         _com_emobit_yishou_ui_elder_ElderFindItemFragment_GeneratedInjector.class,
@@ -89,11 +94,14 @@ import hilt_aggregated_deps._dagger_hilt_android_internal_modules_HiltWrapper_Ac
         _com_emobit_yishou_ui_elder_ElderSettingsFragment_GeneratedInjector.class,
         _com_emobit_yishou_ui_elder_EmergencyActivity_GeneratedInjector.class,
         _com_emobit_yishou_ui_elder_MedicationVerifyActivity_GeneratedInjector.class,
+        _com_emobit_yishou_ui_family_FamilyARFragment_GeneratedInjector.class,
         _com_emobit_yishou_ui_family_FamilyAlertsFragment_GeneratedInjector.class,
         _com_emobit_yishou_ui_family_FamilyDashboardFragment_GeneratedInjector.class,
         _com_emobit_yishou_ui_family_FamilyLocationFragment_GeneratedInjector.class,
         _com_emobit_yishou_ui_family_FamilyMainActivity_GeneratedInjector.class,
+        _com_emobit_yishou_ui_family_FamilyMedicationSettingsFragment_GeneratedInjector.class,
         _com_emobit_yishou_ui_family_FamilyReportsFragment_GeneratedInjector.class,
+        _com_emobit_yishou_ui_family_FamilySOSFragment_GeneratedInjector.class,
         _com_emobit_yishou_ui_family_FamilySettingsFragment_GeneratedInjector.class,
         _dagger_hilt_android_flags_FragmentGetContextFix_FragmentGetContextFixEntryPoint.class,
         _dagger_hilt_android_flags_HiltWrapper_FragmentGetContextFix_FragmentGetContextFixModule.class,

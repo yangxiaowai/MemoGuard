@@ -1,78 +1,102 @@
 [
     {
-        "merged": "com.emobit.yishou.app-mergeDebugResources-71:/layout/fragment_family_alerts.xml",
-        "source": "com.emobit.yishou.app-main-74:/layout/fragment_family_alerts.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-mergeDebugResources-71:/layout/activity_ar_navigation.xml",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/layout/activity_ar_navigation.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-mergeDebugResources-71:/layout/activity_medication_verify.xml",
-        "source": "com.emobit.yishou.app-main-74:/layout/activity_medication_verify.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-mergeDebugResources-71:/layout/fragment_family_reports.xml",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/layout/fragment_family_reports.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-mergeDebugResources-71:/layout/fragment_elder_settings.xml",
-        "source": "com.emobit.yishou.app-main-74:/layout/fragment_elder_settings.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-mergeDebugResources-71:/layout/fragment_elder_memory.xml",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/layout/fragment_elder_memory.xml"
+    },
+    {
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-mergeDebugResources-71:/layout/activity_areye.xml",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/layout/activity_areye.xml"
+    },
+    {
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-mergeDebugResources-71:/layout/fragment_elder_settings.xml",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/layout/fragment_elder_settings.xml"
+    },
+    {
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-mergeDebugResources-71:/layout/fragment_elder_home.xml",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/layout/fragment_elder_home.xml"
+    },
+    {
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-mergeDebugResources-71:/layout/fragment_family_medication_settings.xml",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/layout/fragment_family_medication_settings.xml"
+    },
+    {
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-mergeDebugResources-71:/layout/fragment_family_location.xml",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/layout/fragment_family_location.xml"
+    },
+    {
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-mergeDebugResources-71:/layout/fragment_elder_medication.xml",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/layout/fragment_elder_medication.xml"
+    },
+    {
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-mergeDebugResources-71:/layout/activity_elder_main.xml",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/layout/activity_elder_main.xml"
+    },
+    {
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-mergeDebugResources-71:/layout/fragment_elder_find_item.xml",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/layout/fragment_elder_find_item.xml"
+    },
+    {
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-mergeDebugResources-71:/layout/fragment_elder_chat.xml",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/layout/fragment_elder_chat.xml"
+    },
+    {
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-mergeDebugResources-71:/layout/fragment_family_dashboard.xml",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/layout/fragment_family_dashboard.xml"
     },
     {
         "merged": "com.emobit.yishou.app-mergeDebugResources-71:/layout/fragment_family_dashboard.xml",
         "source": "com.emobit.yishou.app-main-74:/layout/fragment_family_dashboard.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-mergeDebugResources-71:/layout/fragment_family_reports.xml",
-        "source": "com.emobit.yishou.app-main-74:/layout/fragment_family_reports.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-mergeDebugResources-71:/layout/activity_emergency.xml",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/layout/activity_emergency.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-mergeDebugResources-71:/layout/fragment_elder_home.xml",
-        "source": "com.emobit.yishou.app-main-74:/layout/fragment_elder_home.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-mergeDebugResources-71:/layout/activity_role_selector.xml",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/layout/activity_role_selector.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-mergeDebugResources-71:/layout/fragment_elder_medication.xml",
-        "source": "com.emobit.yishou.app-main-74:/layout/fragment_elder_medication.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-mergeDebugResources-71:/layout/activity_medication_verify.xml",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/layout/activity_medication_verify.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-mergeDebugResources-71:/layout/activity_elder_main.xml",
-        "source": "com.emobit.yishou.app-main-74:/layout/activity_elder_main.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-mergeDebugResources-71:/layout/fragment_family_alerts.xml",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/layout/fragment_family_alerts.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-mergeDebugResources-71:/layout/fragment_elder_chat.xml",
-        "source": "com.emobit.yishou.app-main-74:/layout/fragment_elder_chat.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-mergeDebugResources-71:/layout/fragment_family_sos.xml",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/layout/fragment_family_sos.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-mergeDebugResources-71:/layout/fragment_family_settings.xml",
-        "source": "com.emobit.yishou.app-main-74:/layout/fragment_family_settings.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-mergeDebugResources-71:/layout/item_recognized_person.xml",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/layout/item_recognized_person.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-mergeDebugResources-71:/layout/item_report_category.xml",
-        "source": "com.emobit.yishou.app-main-74:/layout/item_report_category.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-mergeDebugResources-71:/layout/fragment_family_ar.xml",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/layout/fragment_family_ar.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-mergeDebugResources-71:/layout/activity_emergency.xml",
-        "source": "com.emobit.yishou.app-main-74:/layout/activity_emergency.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-mergeDebugResources-71:/layout/activity_family_main.xml",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/layout/activity_family_main.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-mergeDebugResources-71:/layout/activity_ar_navigation.xml",
-        "source": "com.emobit.yishou.app-main-74:/layout/activity_ar_navigation.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-mergeDebugResources-71:/layout/fragment_elder_navigation.xml",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/layout/fragment_elder_navigation.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-mergeDebugResources-71:/layout/fragment_elder_find_item.xml",
-        "source": "com.emobit.yishou.app-main-74:/layout/fragment_elder_find_item.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-mergeDebugResources-71:/layout/fragment_family_settings.xml",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/layout/fragment_family_settings.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-mergeDebugResources-71:/layout/fragment_family_location.xml",
-        "source": "com.emobit.yishou.app-main-74:/layout/fragment_family_location.xml"
-    },
-    {
-        "merged": "com.emobit.yishou.app-mergeDebugResources-71:/layout/fragment_elder_memory.xml",
-        "source": "com.emobit.yishou.app-main-74:/layout/fragment_elder_memory.xml"
-    },
-    {
-        "merged": "com.emobit.yishou.app-mergeDebugResources-71:/layout/activity_role_selector.xml",
-        "source": "com.emobit.yishou.app-main-74:/layout/activity_role_selector.xml"
-    },
-    {
-        "merged": "com.emobit.yishou.app-mergeDebugResources-71:/layout/fragment_elder_navigation.xml",
-        "source": "com.emobit.yishou.app-main-74:/layout/fragment_elder_navigation.xml"
-    },
-    {
-        "merged": "com.emobit.yishou.app-mergeDebugResources-71:/layout/activity_family_main.xml",
-        "source": "com.emobit.yishou.app-main-74:/layout/activity_family_main.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-mergeDebugResources-71:/layout/item_report_category.xml",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/layout/item_report_category.xml"
     }
 ]

@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.SavedStateHandle;
 import androidx.lifecycle.ViewModel;
 import com.emobit.yishou.ui.common.RoleSelectorActivity;
+import com.emobit.yishou.ui.elder.AREyeActivity;
 import com.emobit.yishou.ui.elder.ARNavigationActivity;
 import com.emobit.yishou.ui.elder.ElderChatFragment;
 import com.emobit.yishou.ui.elder.ElderFindItemFragment;
@@ -18,11 +19,14 @@ import com.emobit.yishou.ui.elder.ElderNavigationFragment;
 import com.emobit.yishou.ui.elder.ElderSettingsFragment;
 import com.emobit.yishou.ui.elder.EmergencyActivity;
 import com.emobit.yishou.ui.elder.MedicationVerifyActivity;
+import com.emobit.yishou.ui.family.FamilyARFragment;
 import com.emobit.yishou.ui.family.FamilyAlertsFragment;
 import com.emobit.yishou.ui.family.FamilyDashboardFragment;
 import com.emobit.yishou.ui.family.FamilyLocationFragment;
 import com.emobit.yishou.ui.family.FamilyMainActivity;
+import com.emobit.yishou.ui.family.FamilyMedicationSettingsFragment;
 import com.emobit.yishou.ui.family.FamilyReportsFragment;
+import com.emobit.yishou.ui.family.FamilySOSFragment;
 import com.emobit.yishou.ui.family.FamilySettingsFragment;
 import dagger.hilt.android.ActivityRetainedLifecycle;
 import dagger.hilt.android.ViewModelLifecycle;
@@ -357,6 +361,10 @@ public final class DaggerEmoBitApplication_HiltComponents_SingletonC {
     }
 
     @Override
+    public void injectFamilyARFragment(FamilyARFragment familyARFragment) {
+    }
+
+    @Override
     public void injectFamilyAlertsFragment(FamilyAlertsFragment familyAlertsFragment) {
     }
 
@@ -369,7 +377,16 @@ public final class DaggerEmoBitApplication_HiltComponents_SingletonC {
     }
 
     @Override
+    public void injectFamilyMedicationSettingsFragment(
+        FamilyMedicationSettingsFragment familyMedicationSettingsFragment) {
+    }
+
+    @Override
     public void injectFamilyReportsFragment(FamilyReportsFragment familyReportsFragment) {
+    }
+
+    @Override
+    public void injectFamilySOSFragment(FamilySOSFragment familySOSFragment) {
     }
 
     @Override
@@ -423,6 +440,10 @@ public final class DaggerEmoBitApplication_HiltComponents_SingletonC {
 
     @Override
     public void injectRoleSelectorActivity(RoleSelectorActivity roleSelectorActivity) {
+    }
+
+    @Override
+    public void injectAREyeActivity(AREyeActivity aREyeActivity) {
     }
 
     @Override

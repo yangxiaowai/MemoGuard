@@ -1,6 +1,7 @@
 package com.emobit.yishou;
 
 import com.emobit.yishou.ui.common.RoleSelectorActivity_GeneratedInjector;
+import com.emobit.yishou.ui.elder.AREyeActivity_GeneratedInjector;
 import com.emobit.yishou.ui.elder.ARNavigationActivity_GeneratedInjector;
 import com.emobit.yishou.ui.elder.ElderChatFragment_GeneratedInjector;
 import com.emobit.yishou.ui.elder.ElderFindItemFragment_GeneratedInjector;
@@ -12,11 +13,14 @@ import com.emobit.yishou.ui.elder.ElderNavigationFragment_GeneratedInjector;
 import com.emobit.yishou.ui.elder.ElderSettingsFragment_GeneratedInjector;
 import com.emobit.yishou.ui.elder.EmergencyActivity_GeneratedInjector;
 import com.emobit.yishou.ui.elder.MedicationVerifyActivity_GeneratedInjector;
+import com.emobit.yishou.ui.family.FamilyARFragment_GeneratedInjector;
 import com.emobit.yishou.ui.family.FamilyAlertsFragment_GeneratedInjector;
 import com.emobit.yishou.ui.family.FamilyDashboardFragment_GeneratedInjector;
 import com.emobit.yishou.ui.family.FamilyLocationFragment_GeneratedInjector;
 import com.emobit.yishou.ui.family.FamilyMainActivity_GeneratedInjector;
+import com.emobit.yishou.ui.family.FamilyMedicationSettingsFragment_GeneratedInjector;
 import com.emobit.yishou.ui.family.FamilyReportsFragment_GeneratedInjector;
+import com.emobit.yishou.ui.family.FamilySOSFragment_GeneratedInjector;
 import com.emobit.yishou.ui.family.FamilySettingsFragment_GeneratedInjector;
 import dagger.Binds;
 import dagger.Component;
@@ -194,6 +198,7 @@ public final class EmoBitApplication_HiltComponents {
   )
   @ActivityScoped
   public abstract static class ActivityC implements RoleSelectorActivity_GeneratedInjector,
+      AREyeActivity_GeneratedInjector,
       ARNavigationActivity_GeneratedInjector,
       ElderMainActivity_GeneratedInjector,
       EmergencyActivity_GeneratedInjector,
@@ -242,10 +247,13 @@ public final class EmoBitApplication_HiltComponents {
       ElderMemoryFragment_GeneratedInjector,
       ElderNavigationFragment_GeneratedInjector,
       ElderSettingsFragment_GeneratedInjector,
+      FamilyARFragment_GeneratedInjector,
       FamilyAlertsFragment_GeneratedInjector,
       FamilyDashboardFragment_GeneratedInjector,
       FamilyLocationFragment_GeneratedInjector,
+      FamilyMedicationSettingsFragment_GeneratedInjector,
       FamilyReportsFragment_GeneratedInjector,
+      FamilySOSFragment_GeneratedInjector,
       FamilySettingsFragment_GeneratedInjector,
       FragmentComponent,
       DefaultViewModelFactories.FragmentEntryPoint,

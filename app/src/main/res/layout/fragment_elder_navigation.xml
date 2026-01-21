@@ -283,12 +283,77 @@
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
+        <!-- AR眼睛功能入口 -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardAREye"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_xl"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardBackgroundColor="@color/primary_50"
+            app:cardCornerRadius="@dimen/radius_elder_lg"
+            app:cardElevation="4dp"
+            app:rippleColor="@color/primary_100">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/spacing_lg">
+
+                <FrameLayout
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:background="@drawable/bg_icon_container_gradient">
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_eye"
+                        app:tint="@color/primary" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_md"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ar_eye"
+                        android:textAppearance="@style/TextAppearance.EmoBit.Elder.LG"
+                        android:textColor="@color/text_primary"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_xxs"
+                        android:text="@string/ar_eye_desc"
+                        android:textAppearance="@style/TextAppearance.EmoBit.Elder.SM"
+                        android:textColor="@color/text_secondary" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_chevron_right"
+                    app:tint="@color/primary" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
         <!-- 底部开始导航按钮 -->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnStartNav"
             android:layout_width="match_parent"
             android:layout_height="@dimen/btn_elder_height"
-            android:layout_marginTop="@dimen/spacing_xl"
+            android:layout_marginTop="@dimen/spacing_md"
             android:text="@string/nav_start"
             android:textAppearance="@style/TextAppearance.EmoBit.Elder.LG"
             android:textColor="@color/text_on_primary"

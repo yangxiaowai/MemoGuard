@@ -4,20 +4,82 @@ package com.emobit.yishou.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.widget.NestedScrollView;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import com.emobit.yishou.R;
+import com.google.android.material.button.MaterialButton;
+import com.google.android.material.slider.Slider;
+import com.google.android.material.switchmaterial.SwitchMaterial;
 import java.lang.NullPointerException;
 import java.lang.Override;
+import java.lang.String;
 
 public final class FragmentFamilySettingsBinding implements ViewBinding {
   @NonNull
   private final NestedScrollView rootView;
 
-  private FragmentFamilySettingsBinding(@NonNull NestedScrollView rootView) {
+  @NonNull
+  public final MaterialButton btnEdit;
+
+  @NonNull
+  public final ImageView ivProfile;
+
+  @NonNull
+  public final Slider sliderVolume;
+
+  @NonNull
+  public final SwitchMaterial switchARGlassesConnection;
+
+  @NonNull
+  public final SwitchMaterial switchEmergencyMode;
+
+  @NonNull
+  public final SwitchMaterial switchLocationReminder;
+
+  @NonNull
+  public final SwitchMaterial switchMedicationReminder;
+
+  @NonNull
+  public final SwitchMaterial switchVoiceBroadcast;
+
+  @NonNull
+  public final TextView tvElderInfo;
+
+  @NonNull
+  public final TextView tvElderName;
+
+  @NonNull
+  public final TextView tvSystemInfo;
+
+  @NonNull
+  public final TextView tvVolumeLevel;
+
+  private FragmentFamilySettingsBinding(@NonNull NestedScrollView rootView,
+      @NonNull MaterialButton btnEdit, @NonNull ImageView ivProfile, @NonNull Slider sliderVolume,
+      @NonNull SwitchMaterial switchARGlassesConnection,
+      @NonNull SwitchMaterial switchEmergencyMode, @NonNull SwitchMaterial switchLocationReminder,
+      @NonNull SwitchMaterial switchMedicationReminder,
+      @NonNull SwitchMaterial switchVoiceBroadcast, @NonNull TextView tvElderInfo,
+      @NonNull TextView tvElderName, @NonNull TextView tvSystemInfo,
+      @NonNull TextView tvVolumeLevel) {
     this.rootView = rootView;
+    this.btnEdit = btnEdit;
+    this.ivProfile = ivProfile;
+    this.sliderVolume = sliderVolume;
+    this.switchARGlassesConnection = switchARGlassesConnection;
+    this.switchEmergencyMode = switchEmergencyMode;
+    this.switchLocationReminder = switchLocationReminder;
+    this.switchMedicationReminder = switchMedicationReminder;
+    this.switchVoiceBroadcast = switchVoiceBroadcast;
+    this.tvElderInfo = tvElderInfo;
+    this.tvElderName = tvElderName;
+    this.tvSystemInfo = tvSystemInfo;
+    this.tvVolumeLevel = tvVolumeLevel;
   }
 
   @Override
@@ -43,10 +105,88 @@ public final class FragmentFamilySettingsBinding implements ViewBinding {
 
   @NonNull
   public static FragmentFamilySettingsBinding bind(@NonNull View rootView) {
-    if (rootView == null) {
-      throw new NullPointerException("rootView");
-    }
+    // The body of this method is generated in a way you would not otherwise write.
+    // This is done to optimize the compiled bytecode for size and performance.
+    int id;
+    missingId: {
+      id = R.id.btnEdit;
+      MaterialButton btnEdit = ViewBindings.findChildViewById(rootView, id);
+      if (btnEdit == null) {
+        break missingId;
+      }
 
-    return new FragmentFamilySettingsBinding((NestedScrollView) rootView);
+      id = R.id.ivProfile;
+      ImageView ivProfile = ViewBindings.findChildViewById(rootView, id);
+      if (ivProfile == null) {
+        break missingId;
+      }
+
+      id = R.id.sliderVolume;
+      Slider sliderVolume = ViewBindings.findChildViewById(rootView, id);
+      if (sliderVolume == null) {
+        break missingId;
+      }
+
+      id = R.id.switchARGlassesConnection;
+      SwitchMaterial switchARGlassesConnection = ViewBindings.findChildViewById(rootView, id);
+      if (switchARGlassesConnection == null) {
+        break missingId;
+      }
+
+      id = R.id.switchEmergencyMode;
+      SwitchMaterial switchEmergencyMode = ViewBindings.findChildViewById(rootView, id);
+      if (switchEmergencyMode == null) {
+        break missingId;
+      }
+
+      id = R.id.switchLocationReminder;
+      SwitchMaterial switchLocationReminder = ViewBindings.findChildViewById(rootView, id);
+      if (switchLocationReminder == null) {
+        break missingId;
+      }
+
+      id = R.id.switchMedicationReminder;
+      SwitchMaterial switchMedicationReminder = ViewBindings.findChildViewById(rootView, id);
+      if (switchMedicationReminder == null) {
+        break missingId;
+      }
+
+      id = R.id.switchVoiceBroadcast;
+      SwitchMaterial switchVoiceBroadcast = ViewBindings.findChildViewById(rootView, id);
+      if (switchVoiceBroadcast == null) {
+        break missingId;
+      }
+
+      id = R.id.tvElderInfo;
+      TextView tvElderInfo = ViewBindings.findChildViewById(rootView, id);
+      if (tvElderInfo == null) {
+        break missingId;
+      }
+
+      id = R.id.tvElderName;
+      TextView tvElderName = ViewBindings.findChildViewById(rootView, id);
+      if (tvElderName == null) {
+        break missingId;
+      }
+
+      id = R.id.tvSystemInfo;
+      TextView tvSystemInfo = ViewBindings.findChildViewById(rootView, id);
+      if (tvSystemInfo == null) {
+        break missingId;
+      }
+
+      id = R.id.tvVolumeLevel;
+      TextView tvVolumeLevel = ViewBindings.findChildViewById(rootView, id);
+      if (tvVolumeLevel == null) {
+        break missingId;
+      }
+
+      return new FragmentFamilySettingsBinding((NestedScrollView) rootView, btnEdit, ivProfile,
+          sliderVolume, switchARGlassesConnection, switchEmergencyMode, switchLocationReminder,
+          switchMedicationReminder, switchVoiceBroadcast, tvElderInfo, tvElderName, tvSystemInfo,
+          tvVolumeLevel);
+    }
+    String missingId = rootView.getResources().getResourceName(id);
+    throw new NullPointerException("Missing required view with ID: ".concat(missingId));
   }
 }

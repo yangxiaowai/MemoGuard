@@ -4,6 +4,7 @@ package com.emobit.yishou.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -20,31 +21,67 @@ public final class FragmentFamilyDashboardBinding implements ViewBinding {
   private final NestedScrollView rootView;
 
   @NonNull
-  public final TextView tvActivity1;
+  public final LinearLayout btnArAssist;
 
   @NonNull
-  public final TextView tvActivity2;
+  public final LinearLayout btnDigitalCompanion;
 
   @NonNull
-  public final TextView tvActivity3;
+  public final LinearLayout btnHealthReminder;
 
   @NonNull
-  public final TextView tvActivity4;
+  public final LinearLayout btnLocationTracking;
 
   @NonNull
-  public final TextView tvBloodOxygen;
+  public final TextView btnViewAll;
+
+  @NonNull
+  public final TextView tvArStatus;
+
+  @NonNull
+  public final TextView tvBatteryLevel;
+
+  @NonNull
+  public final TextView tvCurrentTime;
 
   @NonNull
   public final TextView tvElderName;
 
   @NonNull
+  public final TextView tvGpsStatus;
+
+  @NonNull
   public final TextView tvHeartRate;
 
   @NonNull
-  public final TextView tvLocationText;
+  public final TextView tvReminder1Status;
 
   @NonNull
-  public final TextView tvSleep;
+  public final TextView tvReminder1Time;
+
+  @NonNull
+  public final TextView tvReminder1Title;
+
+  @NonNull
+  public final TextView tvReminder2Status;
+
+  @NonNull
+  public final TextView tvReminder2Time;
+
+  @NonNull
+  public final TextView tvReminder2Title;
+
+  @NonNull
+  public final TextView tvReminder3Time;
+
+  @NonNull
+  public final TextView tvReminder3Title;
+
+  @NonNull
+  public final TextView tvReminder4Time;
+
+  @NonNull
+  public final TextView tvReminder4Title;
 
   @NonNull
   public final TextView tvStatusText;
@@ -52,27 +89,42 @@ public final class FragmentFamilyDashboardBinding implements ViewBinding {
   @NonNull
   public final TextView tvSteps;
 
-  @NonNull
-  public final TextView tvUpdateTime;
-
   private FragmentFamilyDashboardBinding(@NonNull NestedScrollView rootView,
-      @NonNull TextView tvActivity1, @NonNull TextView tvActivity2, @NonNull TextView tvActivity3,
-      @NonNull TextView tvActivity4, @NonNull TextView tvBloodOxygen, @NonNull TextView tvElderName,
-      @NonNull TextView tvHeartRate, @NonNull TextView tvLocationText, @NonNull TextView tvSleep,
-      @NonNull TextView tvStatusText, @NonNull TextView tvSteps, @NonNull TextView tvUpdateTime) {
+      @NonNull LinearLayout btnArAssist, @NonNull LinearLayout btnDigitalCompanion,
+      @NonNull LinearLayout btnHealthReminder, @NonNull LinearLayout btnLocationTracking,
+      @NonNull TextView btnViewAll, @NonNull TextView tvArStatus, @NonNull TextView tvBatteryLevel,
+      @NonNull TextView tvCurrentTime, @NonNull TextView tvElderName, @NonNull TextView tvGpsStatus,
+      @NonNull TextView tvHeartRate, @NonNull TextView tvReminder1Status,
+      @NonNull TextView tvReminder1Time, @NonNull TextView tvReminder1Title,
+      @NonNull TextView tvReminder2Status, @NonNull TextView tvReminder2Time,
+      @NonNull TextView tvReminder2Title, @NonNull TextView tvReminder3Time,
+      @NonNull TextView tvReminder3Title, @NonNull TextView tvReminder4Time,
+      @NonNull TextView tvReminder4Title, @NonNull TextView tvStatusText,
+      @NonNull TextView tvSteps) {
     this.rootView = rootView;
-    this.tvActivity1 = tvActivity1;
-    this.tvActivity2 = tvActivity2;
-    this.tvActivity3 = tvActivity3;
-    this.tvActivity4 = tvActivity4;
-    this.tvBloodOxygen = tvBloodOxygen;
+    this.btnArAssist = btnArAssist;
+    this.btnDigitalCompanion = btnDigitalCompanion;
+    this.btnHealthReminder = btnHealthReminder;
+    this.btnLocationTracking = btnLocationTracking;
+    this.btnViewAll = btnViewAll;
+    this.tvArStatus = tvArStatus;
+    this.tvBatteryLevel = tvBatteryLevel;
+    this.tvCurrentTime = tvCurrentTime;
     this.tvElderName = tvElderName;
+    this.tvGpsStatus = tvGpsStatus;
     this.tvHeartRate = tvHeartRate;
-    this.tvLocationText = tvLocationText;
-    this.tvSleep = tvSleep;
+    this.tvReminder1Status = tvReminder1Status;
+    this.tvReminder1Time = tvReminder1Time;
+    this.tvReminder1Title = tvReminder1Title;
+    this.tvReminder2Status = tvReminder2Status;
+    this.tvReminder2Time = tvReminder2Time;
+    this.tvReminder2Title = tvReminder2Title;
+    this.tvReminder3Time = tvReminder3Time;
+    this.tvReminder3Title = tvReminder3Title;
+    this.tvReminder4Time = tvReminder4Time;
+    this.tvReminder4Title = tvReminder4Title;
     this.tvStatusText = tvStatusText;
     this.tvSteps = tvSteps;
-    this.tvUpdateTime = tvUpdateTime;
   }
 
   @Override
@@ -102,33 +154,51 @@ public final class FragmentFamilyDashboardBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.tvActivity1;
-      TextView tvActivity1 = ViewBindings.findChildViewById(rootView, id);
-      if (tvActivity1 == null) {
+      id = R.id.btnArAssist;
+      LinearLayout btnArAssist = ViewBindings.findChildViewById(rootView, id);
+      if (btnArAssist == null) {
         break missingId;
       }
 
-      id = R.id.tvActivity2;
-      TextView tvActivity2 = ViewBindings.findChildViewById(rootView, id);
-      if (tvActivity2 == null) {
+      id = R.id.btnDigitalCompanion;
+      LinearLayout btnDigitalCompanion = ViewBindings.findChildViewById(rootView, id);
+      if (btnDigitalCompanion == null) {
         break missingId;
       }
 
-      id = R.id.tvActivity3;
-      TextView tvActivity3 = ViewBindings.findChildViewById(rootView, id);
-      if (tvActivity3 == null) {
+      id = R.id.btnHealthReminder;
+      LinearLayout btnHealthReminder = ViewBindings.findChildViewById(rootView, id);
+      if (btnHealthReminder == null) {
         break missingId;
       }
 
-      id = R.id.tvActivity4;
-      TextView tvActivity4 = ViewBindings.findChildViewById(rootView, id);
-      if (tvActivity4 == null) {
+      id = R.id.btnLocationTracking;
+      LinearLayout btnLocationTracking = ViewBindings.findChildViewById(rootView, id);
+      if (btnLocationTracking == null) {
         break missingId;
       }
 
-      id = R.id.tvBloodOxygen;
-      TextView tvBloodOxygen = ViewBindings.findChildViewById(rootView, id);
-      if (tvBloodOxygen == null) {
+      id = R.id.btnViewAll;
+      TextView btnViewAll = ViewBindings.findChildViewById(rootView, id);
+      if (btnViewAll == null) {
+        break missingId;
+      }
+
+      id = R.id.tvArStatus;
+      TextView tvArStatus = ViewBindings.findChildViewById(rootView, id);
+      if (tvArStatus == null) {
+        break missingId;
+      }
+
+      id = R.id.tvBatteryLevel;
+      TextView tvBatteryLevel = ViewBindings.findChildViewById(rootView, id);
+      if (tvBatteryLevel == null) {
+        break missingId;
+      }
+
+      id = R.id.tvCurrentTime;
+      TextView tvCurrentTime = ViewBindings.findChildViewById(rootView, id);
+      if (tvCurrentTime == null) {
         break missingId;
       }
 
@@ -138,21 +208,75 @@ public final class FragmentFamilyDashboardBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tvGpsStatus;
+      TextView tvGpsStatus = ViewBindings.findChildViewById(rootView, id);
+      if (tvGpsStatus == null) {
+        break missingId;
+      }
+
       id = R.id.tvHeartRate;
       TextView tvHeartRate = ViewBindings.findChildViewById(rootView, id);
       if (tvHeartRate == null) {
         break missingId;
       }
 
-      id = R.id.tvLocationText;
-      TextView tvLocationText = ViewBindings.findChildViewById(rootView, id);
-      if (tvLocationText == null) {
+      id = R.id.tvReminder1Status;
+      TextView tvReminder1Status = ViewBindings.findChildViewById(rootView, id);
+      if (tvReminder1Status == null) {
         break missingId;
       }
 
-      id = R.id.tvSleep;
-      TextView tvSleep = ViewBindings.findChildViewById(rootView, id);
-      if (tvSleep == null) {
+      id = R.id.tvReminder1Time;
+      TextView tvReminder1Time = ViewBindings.findChildViewById(rootView, id);
+      if (tvReminder1Time == null) {
+        break missingId;
+      }
+
+      id = R.id.tvReminder1Title;
+      TextView tvReminder1Title = ViewBindings.findChildViewById(rootView, id);
+      if (tvReminder1Title == null) {
+        break missingId;
+      }
+
+      id = R.id.tvReminder2Status;
+      TextView tvReminder2Status = ViewBindings.findChildViewById(rootView, id);
+      if (tvReminder2Status == null) {
+        break missingId;
+      }
+
+      id = R.id.tvReminder2Time;
+      TextView tvReminder2Time = ViewBindings.findChildViewById(rootView, id);
+      if (tvReminder2Time == null) {
+        break missingId;
+      }
+
+      id = R.id.tvReminder2Title;
+      TextView tvReminder2Title = ViewBindings.findChildViewById(rootView, id);
+      if (tvReminder2Title == null) {
+        break missingId;
+      }
+
+      id = R.id.tvReminder3Time;
+      TextView tvReminder3Time = ViewBindings.findChildViewById(rootView, id);
+      if (tvReminder3Time == null) {
+        break missingId;
+      }
+
+      id = R.id.tvReminder3Title;
+      TextView tvReminder3Title = ViewBindings.findChildViewById(rootView, id);
+      if (tvReminder3Title == null) {
+        break missingId;
+      }
+
+      id = R.id.tvReminder4Time;
+      TextView tvReminder4Time = ViewBindings.findChildViewById(rootView, id);
+      if (tvReminder4Time == null) {
+        break missingId;
+      }
+
+      id = R.id.tvReminder4Title;
+      TextView tvReminder4Title = ViewBindings.findChildViewById(rootView, id);
+      if (tvReminder4Title == null) {
         break missingId;
       }
 
@@ -168,15 +292,12 @@ public final class FragmentFamilyDashboardBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.tvUpdateTime;
-      TextView tvUpdateTime = ViewBindings.findChildViewById(rootView, id);
-      if (tvUpdateTime == null) {
-        break missingId;
-      }
-
-      return new FragmentFamilyDashboardBinding((NestedScrollView) rootView, tvActivity1,
-          tvActivity2, tvActivity3, tvActivity4, tvBloodOxygen, tvElderName, tvHeartRate,
-          tvLocationText, tvSleep, tvStatusText, tvSteps, tvUpdateTime);
+      return new FragmentFamilyDashboardBinding((NestedScrollView) rootView, btnArAssist,
+          btnDigitalCompanion, btnHealthReminder, btnLocationTracking, btnViewAll, tvArStatus,
+          tvBatteryLevel, tvCurrentTime, tvElderName, tvGpsStatus, tvHeartRate, tvReminder1Status,
+          tvReminder1Time, tvReminder1Title, tvReminder2Status, tvReminder2Time, tvReminder2Title,
+          tvReminder3Time, tvReminder3Title, tvReminder4Time, tvReminder4Title, tvStatusText,
+          tvSteps);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

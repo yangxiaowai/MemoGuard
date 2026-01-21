@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/yangjun/study/参与项目/软件创新大赛/前端/EmoBit/app/src/main/AndroidManifest.xml:2:1-89:12
-INJECTED from /Users/yangjun/study/参与项目/软件创新大赛/前端/EmoBit/app/src/main/AndroidManifest.xml:2:1-89:12
-INJECTED from /Users/yangjun/study/参与项目/软件创新大赛/前端/EmoBit/app/src/main/AndroidManifest.xml:2:1-89:12
-INJECTED from /Users/yangjun/study/参与项目/软件创新大赛/前端/EmoBit/app/src/main/AndroidManifest.xml:2:1-89:12
+ADDED from /Users/yangjun/study/参与项目/软件创新大赛/前端/EmoBit/app/src/main/AndroidManifest.xml:2:1-96:12
+INJECTED from /Users/yangjun/study/参与项目/软件创新大赛/前端/EmoBit/app/src/main/AndroidManifest.xml:2:1-96:12
+INJECTED from /Users/yangjun/study/参与项目/软件创新大赛/前端/EmoBit/app/src/main/AndroidManifest.xml:2:1-96:12
+INJECTED from /Users/yangjun/study/参与项目/软件创新大赛/前端/EmoBit/app/src/main/AndroidManifest.xml:2:1-96:12
 MERGED from [androidx.databinding:databinding-adapters:8.5.2] /Users/yangjun/.gradle/caches/transforms-4/6300ee231fcaf6f1fe3ad0c498f1ec6e/transformed/databinding-adapters-8.5.2/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.databinding:databinding-ktx:8.5.2] /Users/yangjun/.gradle/caches/transforms-4/3a829a4a69843db779ef8c58c3c0abee/transformed/databinding-ktx-8.5.2/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.databinding:databinding-runtime:8.5.2] /Users/yangjun/.gradle/caches/transforms-4/0019e805108a2af20f3619d531eb4b42/transformed/databinding-runtime-8.5.2/AndroidManifest.xml:2:1-7:12
@@ -210,8 +210,8 @@ ADDED from /Users/yangjun/study/参与项目/软件创新大赛/前端/EmoBit/ap
 	android:name
 		ADDED from /Users/yangjun/study/参与项目/软件创新大赛/前端/EmoBit/app/src/main/AndroidManifest.xml:23:19-63
 application
-ADDED from /Users/yangjun/study/参与项目/软件创新大赛/前端/EmoBit/app/src/main/AndroidManifest.xml:25:5-87:19
-INJECTED from /Users/yangjun/study/参与项目/软件创新大赛/前端/EmoBit/app/src/main/AndroidManifest.xml:25:5-87:19
+ADDED from /Users/yangjun/study/参与项目/软件创新大赛/前端/EmoBit/app/src/main/AndroidManifest.xml:25:5-94:19
+INJECTED from /Users/yangjun/study/参与项目/软件创新大赛/前端/EmoBit/app/src/main/AndroidManifest.xml:25:5-94:19
 MERGED from [com.google.android.material:material:1.11.0] /Users/yangjun/.gradle/caches/transforms-4/40db53a390c6847a12cdf0d1ff17d5c9/transformed/material-1.11.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.11.0] /Users/yangjun/.gradle/caches/transforms-4/40db53a390c6847a12cdf0d1ff17d5c9/transformed/material-1.11.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/yangjun/.gradle/caches/transforms-4/5d0bd6132f4b3ec42a763e2000e8cd9f/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
@@ -362,12 +362,22 @@ ADDED from /Users/yangjun/study/参与项目/软件创新大赛/前端/EmoBit/ap
 		ADDED from /Users/yangjun/study/参与项目/软件创新大赛/前端/EmoBit/app/src/main/AndroidManifest.xml:79:13-37
 	android:name
 		ADDED from /Users/yangjun/study/参与项目/软件创新大赛/前端/EmoBit/app/src/main/AndroidManifest.xml:78:13-62
-meta-data#com.google.android.geo.API_KEY
-ADDED from /Users/yangjun/study/参与项目/软件创新大赛/前端/EmoBit/app/src/main/AndroidManifest.xml:83:9-85:49
-	android:value
-		ADDED from /Users/yangjun/study/参与项目/软件创新大赛/前端/EmoBit/app/src/main/AndroidManifest.xml:85:13-46
+activity#com.emobit.yishou.ui.elder.AREyeActivity
+ADDED from /Users/yangjun/study/参与项目/软件创新大赛/前端/EmoBit/app/src/main/AndroidManifest.xml:83:9-87:62
+	android:screenOrientation
+		ADDED from /Users/yangjun/study/参与项目/软件创新大赛/前端/EmoBit/app/src/main/AndroidManifest.xml:86:13-49
+	android:exported
+		ADDED from /Users/yangjun/study/参与项目/软件创新大赛/前端/EmoBit/app/src/main/AndroidManifest.xml:85:13-37
+	android:theme
+		ADDED from /Users/yangjun/study/参与项目/软件创新大赛/前端/EmoBit/app/src/main/AndroidManifest.xml:87:13-59
 	android:name
-		ADDED from /Users/yangjun/study/参与项目/软件创新大赛/前端/EmoBit/app/src/main/AndroidManifest.xml:84:13-58
+		ADDED from /Users/yangjun/study/参与项目/软件创新大赛/前端/EmoBit/app/src/main/AndroidManifest.xml:84:13-51
+meta-data#com.google.android.geo.API_KEY
+ADDED from /Users/yangjun/study/参与项目/软件创新大赛/前端/EmoBit/app/src/main/AndroidManifest.xml:90:9-92:49
+	android:value
+		ADDED from /Users/yangjun/study/参与项目/软件创新大赛/前端/EmoBit/app/src/main/AndroidManifest.xml:92:13-46
+	android:name
+		ADDED from /Users/yangjun/study/参与项目/软件创新大赛/前端/EmoBit/app/src/main/AndroidManifest.xml:91:13-58
 uses-sdk
 INJECTED from /Users/yangjun/study/参与项目/软件创新大赛/前端/EmoBit/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/yangjun/study/参与项目/软件创新大赛/前端/EmoBit/app/src/main/AndroidManifest.xml

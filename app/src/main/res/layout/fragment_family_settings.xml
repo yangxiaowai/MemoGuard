@@ -1,53 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/slate_50">
+    android:background="@color/slate_50"
+    android:fillViewport="true">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingHorizontal="@dimen/spacing_md"
-        android:paddingTop="@dimen/spacing_lg"
-        android:paddingBottom="100dp">
+        android:orientation="vertical">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <!-- 顶部标题栏 - 紫色渐变 -->
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="设置"
-            android:textColor="@color/slate_800"
-            android:textSize="@dimen/text_2xl"
-            android:textStyle="bold" />
+            android:background="@drawable/bg_gradient_primary"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/spacing_lg"
+            android:paddingTop="@dimen/spacing_xl"
+            android:paddingBottom="@dimen/spacing_lg">
 
-        <!-- 守护对象 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设置中心"
+                android:textAppearance="@style/TextAppearance.EmoBit.Elder.XL"
+                android:textColor="@color/text_on_primary"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- 个人资料卡片 -->
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/spacing_lg"
             android:layout_marginTop="@dimen/spacing_lg"
             app:cardBackgroundColor="@color/surface"
-            app:cardCornerRadius="@dimen/radius_lg"
-            app:cardElevation="2dp">
+            app:cardCornerRadius="@dimen/radius_elder_lg"
+            app:cardElevation="4dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
-                android:padding="@dimen/spacing_md">
+                android:padding="@dimen/spacing_lg">
 
-                <FrameLayout
-                    android:layout_width="56dp"
-                    android:layout_height="56dp"
-                    android:background="@drawable/bg_avatar_container">
-
-                    <ImageView
-                        android:layout_width="36dp"
-                        android:layout_height="36dp"
-                        android:layout_gravity="center"
-                        android:src="@drawable/ic_avatar_placeholder" />
-                </FrameLayout>
+                <ImageView
+                    android:id="@+id/ivProfile"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="@drawable/bg_circle_primary_light"
+                    android:scaleType="centerCrop"
+                    tools:src="@drawable/ic_avatar_placeholder" />
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -57,81 +64,92 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/tvElderName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/settings_guard_target"
-                        android:textColor="@color/slate_500"
-                        android:textSize="@dimen/text_sm" />
+                        android:text="张阿姨"
+                        android:textAppearance="@style/TextAppearance.EmoBit.Elder.LG"
+                        android:textColor="@color/text_primary"
+                        android:textStyle="bold"
+                        tools:text="张阿姨" />
 
                     <TextView
+                        android:id="@+id/tvElderInfo"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="王大爷"
-                        android:textColor="@color/slate_800"
-                        android:textSize="@dimen/text_lg"
-                        android:textStyle="bold" />
+                        android:layout_marginTop="@dimen/spacing_xxs"
+                        android:text="75岁·北京市"
+                        android:textAppearance="@style/TextAppearance.EmoBit.Elder.Base"
+                        android:textColor="@color/text_secondary"
+                        tools:text="75岁·北京市" />
+
+                    <TextView
+                        android:id="@+id/tvSystemInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_xxs"
+                        android:text="系统配图与个性化"
+                        android:textAppearance="@style/TextAppearance.EmoBit.Elder.SM"
+                        android:textColor="@color/text_secondary"
+                        tools:text="系统配图与个性化" />
                 </LinearLayout>
 
-                <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:src="@drawable/ic_chevron_right"
-                    app:tint="@color/slate_400" />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="编辑"
+                    android:textAppearance="@style/TextAppearance.EmoBit.Elder.Base"
+                    android:textColor="@color/primary"
+                    app:backgroundTint="@color/primary_100"
+                    app:cornerRadius="@dimen/radius_elder"
+                    app:strokeColor="@color/primary_300"
+                    app:strokeWidth="1dp" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
-        <!-- 通知设置 -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/spacing_lg"
-            android:text="@string/settings_notifications"
-            android:textColor="@color/slate_700"
-            android:textSize="@dimen/text_lg"
-            android:textStyle="bold" />
-
+        <!-- 快捷设置卡片 -->
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/spacing_sm"
+            android:layout_marginHorizontal="@dimen/spacing_lg"
+            android:layout_marginTop="@dimen/spacing_md"
             app:cardBackgroundColor="@color/surface"
-            app:cardCornerRadius="@dimen/radius_lg"
-            app:cardElevation="2dp">
+            app:cardCornerRadius="@dimen/radius_elder_lg"
+            app:cardElevation="4dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="@dimen/spacing_md">
+                android:padding="@dimen/spacing_lg">
 
-                <!-- 紧急预警 -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="快捷设置"
+                    android:textAppearance="@style/TextAppearance.EmoBit.Elder.LG"
+                    android:textColor="@color/text_primary"
+                    android:textStyle="bold" />
+
+                <!-- 语音播报 -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center_vertical">
+                    android:layout_marginTop="@dimen/spacing_md"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
 
-                    <LinearLayout
+                    <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/settings_alert_notify"
-                            android:textColor="@color/slate_800"
-                            android:textSize="@dimen/text_base" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/settings_alert_notify_desc"
-                            android:textColor="@color/slate_500"
-                            android:textSize="@dimen/text_sm" />
-                    </LinearLayout>
+                        android:text="语音播报"
+                        android:textAppearance="@style/TextAppearance.EmoBit.Elder.Base"
+                        android:textColor="@color/text_primary" />
 
                     <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/switchVoiceBroadcast"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:checked="true" />
@@ -143,34 +161,51 @@
                     android:layout_marginVertical="@dimen/spacing_md"
                     android:background="@color/divider" />
 
-                <!-- 每日报告 -->
+                <!-- 位置提醒 -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center_vertical">
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
 
-                    <LinearLayout
+                    <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/settings_daily_report"
-                            android:textColor="@color/slate_800"
-                            android:textSize="@dimen/text_base" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/settings_daily_report_desc"
-                            android:textColor="@color/slate_500"
-                            android:textSize="@dimen/text_sm" />
-                    </LinearLayout>
+                        android:text="位置提醒"
+                        android:textAppearance="@style/TextAppearance.EmoBit.Elder.Base"
+                        android:textColor="@color/text_primary" />
 
                     <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/switchLocationReminder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginVertical="@dimen/spacing_md"
+                    android:background="@color/divider" />
+
+                <!-- AR眼镜连接 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="AR眼镜连接"
+                        android:textAppearance="@style/TextAppearance.EmoBit.Elder.Base"
+                        android:textColor="@color/text_primary" />
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/switchARGlassesConnection"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:checked="true" />
@@ -186,30 +221,47 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center_vertical">
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
 
-                    <LinearLayout
+                    <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/settings_med_notify"
-                            android:textColor="@color/slate_800"
-                            android:textSize="@dimen/text_base" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/settings_med_notify_desc"
-                            android:textColor="@color/slate_500"
-                            android:textSize="@dimen/text_sm" />
-                    </LinearLayout>
+                        android:text="服药提醒"
+                        android:textAppearance="@style/TextAppearance.EmoBit.Elder.Base"
+                        android:textColor="@color/text_primary" />
 
                     <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/switchMedicationReminder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginVertical="@dimen/spacing_md"
+                    android:background="@color/divider" />
+
+                <!-- 紧急模式 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="紧急模式"
+                        android:textAppearance="@style/TextAppearance.EmoBit.Elder.Base"
+                        android:textColor="@color/text_primary" />
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/switchEmergencyMode"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:checked="false" />
@@ -217,53 +269,68 @@
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
-        <!-- 关于 -->
+        <!-- 音量与显示卡片 -->
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/spacing_lg"
-            android:clickable="true"
-            android:focusable="true"
+            android:layout_marginHorizontal="@dimen/spacing_lg"
+            android:layout_marginTop="@dimen/spacing_md"
+            android:layout_marginBottom="@dimen/spacing_lg"
             app:cardBackgroundColor="@color/surface"
-            app:cardCornerRadius="@dimen/radius_lg"
-            app:cardElevation="2dp"
-            app:rippleColor="@color/slate_100">
+            app:cardCornerRadius="@dimen/radius_elder_lg"
+            app:cardElevation="4dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:padding="@dimen/spacing_md">
-
-                <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:src="@drawable/ic_sparkles"
-                    app:tint="@color/primary" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/spacing_md"
-                    android:layout_weight="1"
-                    android:text="@string/settings_about"
-                    android:textColor="@color/slate_800"
-                    android:textSize="@dimen/text_base" />
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_lg">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="v1.0.0"
-                    android:textColor="@color/slate_400"
-                    android:textSize="@dimen/text_sm" />
+                    android:text="音量与显示"
+                    android:textAppearance="@style/TextAppearance.EmoBit.Elder.LG"
+                    android:textColor="@color/text_primary"
+                    android:textStyle="bold" />
 
-                <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:layout_marginStart="@dimen/spacing_xs"
-                    android:src="@drawable/ic_chevron_right"
-                    app:tint="@color/slate_400" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_md"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="音量大小"
+                        android:textAppearance="@style/TextAppearance.EmoBit.Elder.Base"
+                        android:textColor="@color/text_primary" />
+
+                    <TextView
+                        android:id="@+id/tvVolumeLevel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/spacing_md"
+                        android:text="75%"
+                        android:textAppearance="@style/TextAppearance.EmoBit.Elder.Base"
+                        android:textColor="@color/text_secondary"
+                        tools:text="75%" />
+                </LinearLayout>
+
+                <com.google.android.material.slider.Slider
+                    android:id="@+id/sliderVolume"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_sm"
+                    android:value="75"
+                    android:valueFrom="0"
+                    android:valueTo="100"
+                    app:thumbColor="@color/primary"
+                    app:trackColorActive="@color/primary"
+                    app:trackColorInactive="@color/slate_200" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 

@@ -6,11 +6,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.core.widget.NestedScrollView;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.emobit.yishou.R;
@@ -21,113 +20,74 @@ import java.lang.String;
 
 public final class FragmentElderHomeBinding implements ViewBinding {
   @NonNull
-  private final NestedScrollView rootView;
-
-  @NonNull
-  public final FrameLayout avatarContainer;
+  private final ConstraintLayout rootView;
 
   @NonNull
   public final FrameLayout btnVoice;
 
   @NonNull
-  public final MaterialCardView cardFindItem;
+  public final MaterialCardView cardAvatarSpeech;
 
   @NonNull
-  public final MaterialCardView cardMedication;
+  public final ImageView ivAvatarPlaceholder;
 
   @NonNull
-  public final MaterialCardView cardMemory;
+  public final ImageView ivVoiceIcon;
 
   @NonNull
-  public final MaterialCardView cardNavigation;
+  public final TextView tvAvatarSpeech;
 
   @NonNull
-  public final ImageView ivAvatar;
+  public final TextView tvAvatarStatus;
 
   @NonNull
-  public final LinearLayout timeContainer;
+  public final TextView tvRecognizedText;
 
   @NonNull
-  public final TextView tvBloodOxygenLabel;
+  public final TextView tvVoiceHint;
 
   @NonNull
-  public final TextView tvBloodOxygenValue;
+  public final TextView tvVoiceStatus;
 
   @NonNull
-  public final TextView tvDate;
+  public final FrameLayout unityContainer;
 
   @NonNull
-  public final TextView tvGreeting;
+  public final View unityPlayerView;
 
   @NonNull
-  public final TextView tvHeartRateLabel;
+  public final MaterialCardView voiceInteractionContainer;
 
   @NonNull
-  public final TextView tvHeartRateValue;
+  public final View voiceWaveIndicator;
 
-  @NonNull
-  public final TextView tvMedicationBadge;
-
-  @NonNull
-  public final TextView tvReminderContent;
-
-  @NonNull
-  public final TextView tvReminderTime;
-
-  @NonNull
-  public final TextView tvSleepLabel;
-
-  @NonNull
-  public final TextView tvSleepValue;
-
-  @NonNull
-  public final TextView tvStepsLabel;
-
-  @NonNull
-  public final TextView tvStepsValue;
-
-  @NonNull
-  public final TextView tvTime;
-
-  private FragmentElderHomeBinding(@NonNull NestedScrollView rootView,
-      @NonNull FrameLayout avatarContainer, @NonNull FrameLayout btnVoice,
-      @NonNull MaterialCardView cardFindItem, @NonNull MaterialCardView cardMedication,
-      @NonNull MaterialCardView cardMemory, @NonNull MaterialCardView cardNavigation,
-      @NonNull ImageView ivAvatar, @NonNull LinearLayout timeContainer,
-      @NonNull TextView tvBloodOxygenLabel, @NonNull TextView tvBloodOxygenValue,
-      @NonNull TextView tvDate, @NonNull TextView tvGreeting, @NonNull TextView tvHeartRateLabel,
-      @NonNull TextView tvHeartRateValue, @NonNull TextView tvMedicationBadge,
-      @NonNull TextView tvReminderContent, @NonNull TextView tvReminderTime,
-      @NonNull TextView tvSleepLabel, @NonNull TextView tvSleepValue,
-      @NonNull TextView tvStepsLabel, @NonNull TextView tvStepsValue, @NonNull TextView tvTime) {
+  private FragmentElderHomeBinding(@NonNull ConstraintLayout rootView,
+      @NonNull FrameLayout btnVoice, @NonNull MaterialCardView cardAvatarSpeech,
+      @NonNull ImageView ivAvatarPlaceholder, @NonNull ImageView ivVoiceIcon,
+      @NonNull TextView tvAvatarSpeech, @NonNull TextView tvAvatarStatus,
+      @NonNull TextView tvRecognizedText, @NonNull TextView tvVoiceHint,
+      @NonNull TextView tvVoiceStatus, @NonNull FrameLayout unityContainer,
+      @NonNull View unityPlayerView, @NonNull MaterialCardView voiceInteractionContainer,
+      @NonNull View voiceWaveIndicator) {
     this.rootView = rootView;
-    this.avatarContainer = avatarContainer;
     this.btnVoice = btnVoice;
-    this.cardFindItem = cardFindItem;
-    this.cardMedication = cardMedication;
-    this.cardMemory = cardMemory;
-    this.cardNavigation = cardNavigation;
-    this.ivAvatar = ivAvatar;
-    this.timeContainer = timeContainer;
-    this.tvBloodOxygenLabel = tvBloodOxygenLabel;
-    this.tvBloodOxygenValue = tvBloodOxygenValue;
-    this.tvDate = tvDate;
-    this.tvGreeting = tvGreeting;
-    this.tvHeartRateLabel = tvHeartRateLabel;
-    this.tvHeartRateValue = tvHeartRateValue;
-    this.tvMedicationBadge = tvMedicationBadge;
-    this.tvReminderContent = tvReminderContent;
-    this.tvReminderTime = tvReminderTime;
-    this.tvSleepLabel = tvSleepLabel;
-    this.tvSleepValue = tvSleepValue;
-    this.tvStepsLabel = tvStepsLabel;
-    this.tvStepsValue = tvStepsValue;
-    this.tvTime = tvTime;
+    this.cardAvatarSpeech = cardAvatarSpeech;
+    this.ivAvatarPlaceholder = ivAvatarPlaceholder;
+    this.ivVoiceIcon = ivVoiceIcon;
+    this.tvAvatarSpeech = tvAvatarSpeech;
+    this.tvAvatarStatus = tvAvatarStatus;
+    this.tvRecognizedText = tvRecognizedText;
+    this.tvVoiceHint = tvVoiceHint;
+    this.tvVoiceStatus = tvVoiceStatus;
+    this.unityContainer = unityContainer;
+    this.unityPlayerView = unityPlayerView;
+    this.voiceInteractionContainer = voiceInteractionContainer;
+    this.voiceWaveIndicator = voiceWaveIndicator;
   }
 
   @Override
   @NonNull
-  public NestedScrollView getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -152,143 +112,88 @@ public final class FragmentElderHomeBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.avatarContainer;
-      FrameLayout avatarContainer = ViewBindings.findChildViewById(rootView, id);
-      if (avatarContainer == null) {
-        break missingId;
-      }
-
       id = R.id.btnVoice;
       FrameLayout btnVoice = ViewBindings.findChildViewById(rootView, id);
       if (btnVoice == null) {
         break missingId;
       }
 
-      id = R.id.cardFindItem;
-      MaterialCardView cardFindItem = ViewBindings.findChildViewById(rootView, id);
-      if (cardFindItem == null) {
+      id = R.id.cardAvatarSpeech;
+      MaterialCardView cardAvatarSpeech = ViewBindings.findChildViewById(rootView, id);
+      if (cardAvatarSpeech == null) {
         break missingId;
       }
 
-      id = R.id.cardMedication;
-      MaterialCardView cardMedication = ViewBindings.findChildViewById(rootView, id);
-      if (cardMedication == null) {
+      id = R.id.ivAvatarPlaceholder;
+      ImageView ivAvatarPlaceholder = ViewBindings.findChildViewById(rootView, id);
+      if (ivAvatarPlaceholder == null) {
         break missingId;
       }
 
-      id = R.id.cardMemory;
-      MaterialCardView cardMemory = ViewBindings.findChildViewById(rootView, id);
-      if (cardMemory == null) {
+      id = R.id.ivVoiceIcon;
+      ImageView ivVoiceIcon = ViewBindings.findChildViewById(rootView, id);
+      if (ivVoiceIcon == null) {
         break missingId;
       }
 
-      id = R.id.cardNavigation;
-      MaterialCardView cardNavigation = ViewBindings.findChildViewById(rootView, id);
-      if (cardNavigation == null) {
+      id = R.id.tvAvatarSpeech;
+      TextView tvAvatarSpeech = ViewBindings.findChildViewById(rootView, id);
+      if (tvAvatarSpeech == null) {
         break missingId;
       }
 
-      id = R.id.ivAvatar;
-      ImageView ivAvatar = ViewBindings.findChildViewById(rootView, id);
-      if (ivAvatar == null) {
+      id = R.id.tvAvatarStatus;
+      TextView tvAvatarStatus = ViewBindings.findChildViewById(rootView, id);
+      if (tvAvatarStatus == null) {
         break missingId;
       }
 
-      id = R.id.timeContainer;
-      LinearLayout timeContainer = ViewBindings.findChildViewById(rootView, id);
-      if (timeContainer == null) {
+      id = R.id.tvRecognizedText;
+      TextView tvRecognizedText = ViewBindings.findChildViewById(rootView, id);
+      if (tvRecognizedText == null) {
         break missingId;
       }
 
-      id = R.id.tvBloodOxygenLabel;
-      TextView tvBloodOxygenLabel = ViewBindings.findChildViewById(rootView, id);
-      if (tvBloodOxygenLabel == null) {
+      id = R.id.tvVoiceHint;
+      TextView tvVoiceHint = ViewBindings.findChildViewById(rootView, id);
+      if (tvVoiceHint == null) {
         break missingId;
       }
 
-      id = R.id.tvBloodOxygenValue;
-      TextView tvBloodOxygenValue = ViewBindings.findChildViewById(rootView, id);
-      if (tvBloodOxygenValue == null) {
+      id = R.id.tvVoiceStatus;
+      TextView tvVoiceStatus = ViewBindings.findChildViewById(rootView, id);
+      if (tvVoiceStatus == null) {
         break missingId;
       }
 
-      id = R.id.tvDate;
-      TextView tvDate = ViewBindings.findChildViewById(rootView, id);
-      if (tvDate == null) {
+      id = R.id.unityContainer;
+      FrameLayout unityContainer = ViewBindings.findChildViewById(rootView, id);
+      if (unityContainer == null) {
         break missingId;
       }
 
-      id = R.id.tvGreeting;
-      TextView tvGreeting = ViewBindings.findChildViewById(rootView, id);
-      if (tvGreeting == null) {
+      id = R.id.unityPlayerView;
+      View unityPlayerView = ViewBindings.findChildViewById(rootView, id);
+      if (unityPlayerView == null) {
         break missingId;
       }
 
-      id = R.id.tvHeartRateLabel;
-      TextView tvHeartRateLabel = ViewBindings.findChildViewById(rootView, id);
-      if (tvHeartRateLabel == null) {
+      id = R.id.voiceInteractionContainer;
+      MaterialCardView voiceInteractionContainer = ViewBindings.findChildViewById(rootView, id);
+      if (voiceInteractionContainer == null) {
         break missingId;
       }
 
-      id = R.id.tvHeartRateValue;
-      TextView tvHeartRateValue = ViewBindings.findChildViewById(rootView, id);
-      if (tvHeartRateValue == null) {
+      id = R.id.voiceWaveIndicator;
+      View voiceWaveIndicator = ViewBindings.findChildViewById(rootView, id);
+      if (voiceWaveIndicator == null) {
         break missingId;
       }
 
-      id = R.id.tvMedicationBadge;
-      TextView tvMedicationBadge = ViewBindings.findChildViewById(rootView, id);
-      if (tvMedicationBadge == null) {
-        break missingId;
-      }
-
-      id = R.id.tvReminderContent;
-      TextView tvReminderContent = ViewBindings.findChildViewById(rootView, id);
-      if (tvReminderContent == null) {
-        break missingId;
-      }
-
-      id = R.id.tvReminderTime;
-      TextView tvReminderTime = ViewBindings.findChildViewById(rootView, id);
-      if (tvReminderTime == null) {
-        break missingId;
-      }
-
-      id = R.id.tvSleepLabel;
-      TextView tvSleepLabel = ViewBindings.findChildViewById(rootView, id);
-      if (tvSleepLabel == null) {
-        break missingId;
-      }
-
-      id = R.id.tvSleepValue;
-      TextView tvSleepValue = ViewBindings.findChildViewById(rootView, id);
-      if (tvSleepValue == null) {
-        break missingId;
-      }
-
-      id = R.id.tvStepsLabel;
-      TextView tvStepsLabel = ViewBindings.findChildViewById(rootView, id);
-      if (tvStepsLabel == null) {
-        break missingId;
-      }
-
-      id = R.id.tvStepsValue;
-      TextView tvStepsValue = ViewBindings.findChildViewById(rootView, id);
-      if (tvStepsValue == null) {
-        break missingId;
-      }
-
-      id = R.id.tvTime;
-      TextView tvTime = ViewBindings.findChildViewById(rootView, id);
-      if (tvTime == null) {
-        break missingId;
-      }
-
-      return new FragmentElderHomeBinding((NestedScrollView) rootView, avatarContainer, btnVoice,
-          cardFindItem, cardMedication, cardMemory, cardNavigation, ivAvatar, timeContainer,
-          tvBloodOxygenLabel, tvBloodOxygenValue, tvDate, tvGreeting, tvHeartRateLabel,
-          tvHeartRateValue, tvMedicationBadge, tvReminderContent, tvReminderTime, tvSleepLabel,
-          tvSleepValue, tvStepsLabel, tvStepsValue, tvTime);
+      return new FragmentElderHomeBinding((ConstraintLayout) rootView, btnVoice, cardAvatarSpeech,
+          ivAvatarPlaceholder, ivVoiceIcon, tvAvatarSpeech, tvAvatarStatus, tvRecognizedText,
+          tvVoiceHint, tvVoiceStatus, unityContainer, unityPlayerView, voiceInteractionContainer,
+          voiceWaveIndicator);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

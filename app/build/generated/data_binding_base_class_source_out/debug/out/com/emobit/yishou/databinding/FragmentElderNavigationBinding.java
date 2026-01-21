@@ -25,6 +25,9 @@ public final class FragmentElderNavigationBinding implements ViewBinding {
   public final MaterialButton btnStartNav;
 
   @NonNull
+  public final MaterialCardView cardAREye;
+
+  @NonNull
   public final MaterialCardView cardHome;
 
   @NonNull
@@ -52,13 +55,15 @@ public final class FragmentElderNavigationBinding implements ViewBinding {
   public final TextView tvParkDistance;
 
   private FragmentElderNavigationBinding(@NonNull NestedScrollView rootView,
-      @NonNull MaterialButton btnStartNav, @NonNull MaterialCardView cardHome,
-      @NonNull MaterialCardView cardMarket, @NonNull MaterialCardView cardPark,
-      @NonNull TextView tvHomeAddress, @NonNull TextView tvHomeDistance,
-      @NonNull TextView tvMarketAddress, @NonNull TextView tvMarketDistance,
-      @NonNull TextView tvParkAddress, @NonNull TextView tvParkDistance) {
+      @NonNull MaterialButton btnStartNav, @NonNull MaterialCardView cardAREye,
+      @NonNull MaterialCardView cardHome, @NonNull MaterialCardView cardMarket,
+      @NonNull MaterialCardView cardPark, @NonNull TextView tvHomeAddress,
+      @NonNull TextView tvHomeDistance, @NonNull TextView tvMarketAddress,
+      @NonNull TextView tvMarketDistance, @NonNull TextView tvParkAddress,
+      @NonNull TextView tvParkDistance) {
     this.rootView = rootView;
     this.btnStartNav = btnStartNav;
+    this.cardAREye = cardAREye;
     this.cardHome = cardHome;
     this.cardMarket = cardMarket;
     this.cardPark = cardPark;
@@ -100,6 +105,12 @@ public final class FragmentElderNavigationBinding implements ViewBinding {
       id = R.id.btnStartNav;
       MaterialButton btnStartNav = ViewBindings.findChildViewById(rootView, id);
       if (btnStartNav == null) {
+        break missingId;
+      }
+
+      id = R.id.cardAREye;
+      MaterialCardView cardAREye = ViewBindings.findChildViewById(rootView, id);
+      if (cardAREye == null) {
         break missingId;
       }
 
@@ -157,9 +168,9 @@ public final class FragmentElderNavigationBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentElderNavigationBinding((NestedScrollView) rootView, btnStartNav, cardHome,
-          cardMarket, cardPark, tvHomeAddress, tvHomeDistance, tvMarketAddress, tvMarketDistance,
-          tvParkAddress, tvParkDistance);
+      return new FragmentElderNavigationBinding((NestedScrollView) rootView, btnStartNav, cardAREye,
+          cardHome, cardMarket, cardPark, tvHomeAddress, tvHomeDistance, tvMarketAddress,
+          tvMarketDistance, tvParkAddress, tvParkDistance);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

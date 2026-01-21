@@ -23,18 +23,7 @@
             android:layout_height="@dimen/toolbar_height"
             android:paddingHorizontal="@dimen/spacing_md">
 
-            <!-- 设置按钮 -->
-            <ImageButton
-                android:id="@+id/btnSettings"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:background="?attr/selectableItemBackgroundBorderless"
-                android:contentDescription="设置"
-                android:src="@drawable/ic_settings"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:tint="@color/slate_500" />
+            <!-- 设置按钮已移除，所有设置由家属端管理 -->
 
             <!-- Logo 和名称 -->
             <LinearLayout
@@ -86,33 +75,19 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.appbar.AppBarLayout>
 
-    <!-- Fragment 容器 -->
+    <!-- Fragment 容器 - 简化为只显示首页 -->
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/nav_host_fragment"
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:defaultNavHost="true"
-        app:layout_constraintBottom_toTopOf="@id/bottomNavigation"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/appBarLayout"
         app:navGraph="@navigation/nav_elder" />
 
-    <!-- 底部导航栏 -->
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigation"
-        android:layout_width="0dp"
-        android:layout_height="@dimen/nav_bar_height"
-        android:background="@color/nav_background"
-        android:elevation="8dp"
-        app:itemIconSize="@dimen/nav_icon_size"
-        app:itemIconTint="@color/nav_item_color"
-        app:itemTextColor="@color/nav_item_color"
-        app:labelVisibilityMode="labeled"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/menu_elder_bottom_nav" />
+    <!-- 底部导航栏已移除，老人端简化为单一界面 -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

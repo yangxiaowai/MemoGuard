@@ -113,6 +113,13 @@
             android:exported="false"
             android:screenOrientation="portrait" />
 
+        <!-- AR眼睛功能Activity -->
+        <activity
+            android:name="com.emobit.yishou.ui.elder.AREyeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.EmoBit.FullScreen" />
+
         <!-- 地图服务 API Key -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"

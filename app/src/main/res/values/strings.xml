@@ -3,7 +3,28 @@
     <!-- 应用名称 -->
     <string name="app_name">EmoBit·忆守</string>
     <string name="app_slogan">您的智能健康守护伙伴</string>
+    <string name="app_subtitle">智能认知辅助系统</string>
     <string name="app_description">基于时空智能与数字孪生的认知障碍代偿系统</string>
+    
+    <!-- 系统状态 -->
+    <string name="system_status">系统状态</string>
+    <string name="gps_status">GPS定位状态</string>
+    <string name="today_activity">今日活动</string>
+    <string name="heart_rate_monitoring">心率监测</string>
+    
+    <!-- 快捷功能 -->
+    <string name="quick_functions">快捷功能</string>
+    <string name="location_tracking">位置追踪</string>
+    <string name="ar_assist">AR辅助</string>
+    <string name="health_reminder">健康提醒</string>
+    <string name="digital_companion">数字同伴</string>
+    
+    <!-- 今日提醒 -->
+    <string name="today_reminders">今日提醒</string>
+    <string name="view_all">查看全部</string>
+    
+    <!-- 底部导航 - 子女端扩展 -->
+    <string name="nav_ar_glasses">AR</string>
 
     <!-- 角色选择页面 -->
     <string name="role_elder">我是长辈</string>
@@ -13,6 +34,8 @@
 
     <!-- 底部导航 - 老人端 -->
     <string name="nav_home">首页</string>
+    <string name="nav_ar">AR</string>
+    <string name="nav_sos">SOS</string>
     <string name="nav_navigation">导航</string>
     <string name="nav_medication">服药</string>
     <string name="nav_chat">聊天</string>
@@ -168,6 +191,39 @@
     <string name="location_today_route">今日轨迹</string>
     <string name="location_safe_zones">安全区域</string>
     <string name="location_manage">管理</string>
+    
+    <!-- GPS定位追踪 -->
+    <string name="gps_location_tracking">GPS定位追踪</string>
+    <string name="realtime_location_monitoring">实时位置监控与轨迹分析</string>
+    <string name="current_location">当前位置</string>
+    <string name="detailed_address">详细地址</string>
+    <string name="update_time">更新时间</string>
+    <string name="navigate_to_here">导航至此</string>
+    <string name="route_home">回家路线</string>
+    
+    <!-- Circle Wandering 徘徊检测 -->
+    <string name="circle_wandering">徘徊检测 (Circle Wandering)</string>
+    <string name="wandering_detection">徘徊检测</string>
+    <string name="wandering_status">徘徊检测状态</string>
+    <string name="wandering_normal">正常</string>
+    <string name="wandering_warning">警告</string>
+    <string name="wandering_detected">检测到用户在附近区域重复徘徊</string>
+    <string name="wandering_no_abnormality">未检测到异常</string>
+    <string name="wandering_dbscan_analysis">DBSCAN聚类分析</string>
+    <string name="wandering_active_areas">个活动区域</string>
+    <string name="wandering_movement_distance">今日移动距离</string>
+    
+    <!-- 安全区域 -->
+    <string name="safe_zones">安全区域</string>
+    <string name="community_hospital">社区医院</string>
+    <string name="park">公园</string>
+    <string name="home">家</string>
+    
+    <!-- 移动轨迹 -->
+    <string name="movement_track">移动轨迹</string>
+    <string name="at_home">家中</string>
+    <string name="nearby_park">附近公园</string>
+    <string name="current_location_short">当前位置</string>
 
     <!-- 子女端 - 认知报告 -->
     <string name="report_title">认知功能评分</string>
@@ -262,4 +318,68 @@
     <string name="minutes_ago">%d分钟前</string>
     <string name="hours_ago">%d小时前</string>
     <string name="yesterday">昨天</string>
+    
+    <!-- AR眼睛功能 -->
+    <string name="ar_eye">AR智能眼镜</string>
+    <string name="ar_eye_title">AR眼睛</string>
+    <string name="ar_eye_desc">实景导航、物品识别、人物识别</string>
+    <string name="ar_eye_navigation">AR实景导航</string>
+    <string name="ar_eye_object_recognition">物品识别</string>
+    <string name="ar_eye_person_recognition">人物识别</string>
+    <string name="ar_eye_switch_mode">切换功能</string>
+    <string name="ar_navigation">AR实景导航</string>
+    <string name="ar_navigation_desc">跟着小忆，不会迷路</string>
+    <string name="object_recognition">物品识别</string>
+    <string name="object_recognition_desc">识别物品并引导寻找</string>
+    <string name="person_recognition">人物识别</string>
+    <string name="person_recognition_desc">识别熟悉的人</string>
+    
+    <!-- 家属端 - 服药设置 -->
+    <string name="medication_settings">服药设置</string>
+    <string name="family_medication_settings_title">服药管理</string>
+    <string name="family_medication_add_new">添加新药品</string>
+    <string name="medication_list">药品列表</string>
+    <string name="medication_add">添加药品</string>
+    <string name="medication_edit">编辑药品</string>
+    <string name="medication_delete">删除</string>
+    <string name="medication_name">药品名称</string>
+    <string name="medication_dosage">剂量</string>
+    <string name="medication_time">服药时间</string>
+    <string name="medication_frequency">服药频率</string>
+    <string name="medication_reminder_settings">提醒设置</string>
+    <string name="medication_daily">每天</string>
+    <string name="medication_weekly">每周</string>
+    <string name="medication_custom">自定义</string>
+    <string name="medication_save">保存设置</string>
+    
+    <!-- AR智能眼镜 -->
+    <string name="ar_glasses_connected">AR眼镜已连接</string>
+    <string name="ar_function_settings">AR功能设置</string>
+    <string name="environmental_perception">环境感知</string>
+    <string name="voice_assistance">语音辅助</string>
+    <string name="recognized_people">已识别人物 (MediaPipe)</string>
+    
+    <!-- 紧急求助 -->
+    <string name="emergency_help">紧急求助</string>
+    <string name="emergency_help_button">紧急求助按钮</string>
+    <string name="long_press_3_seconds">长按3秒发送求助信息</string>
+    <string name="help_message_sending">求助信息发送中</string>
+    <string name="help_message_sent">求助信息已发送</string>
+    <string name="assisted_location_info">协助位置信息</string>
+    <string name="realtime_location">实时定位</string>
+    <string name="gps_accuracy">GPS精度</string>
+    <string name="realtime">实时</string>
+    
+    <!-- 设置中心 -->
+    <string name="settings_center">设置中心</string>
+    <string name="quick_settings">快捷设置</string>
+    <string name="voice_broadcast">语音播报</string>
+    <string name="location_reminder">位置提醒</string>
+    <string name="ar_glasses_connection">AR眼镜连接</string>
+    <string name="medication_reminder">服药提醒</string>
+    <string name="emergency_mode">紧急模式</string>
+    <string name="volume_and_display">音量与显示</string>
+    <string name="volume_level">音量大小</string>
+    <string name="edit">编辑</string>
+    <string name="system_matching">系统配图与个性化</string>
 </resources>

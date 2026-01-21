@@ -40,22 +40,11 @@ class ElderMainActivity : AppCompatActivity() {
         
         navController = navHostFragment.navController
 
-        // 设置底部导航与 NavController 绑定
-        binding.bottomNavigation.setupWithNavController(navController)
-        
-        // 防止重复点击当前页面导致的问题
-        binding.bottomNavigation.setOnItemReselectedListener { 
-            // 重新选择当前项时不做任何操作
-        }
+        // 底部导航栏已移除，老人端简化为单一界面
+        // 所有功能通过语音交互触发
     }
 
     private fun setupClickListeners() {
-        // 设置按钮点击 - 切换到设置页面
-        binding.btnSettings.setOnClickListener {
-            // 导航到设置 Fragment
-            navController.navigate(R.id.elderSettingsFragment)
-        }
-
         // 紧急按钮点击
         binding.btnEmergency.setOnClickListener {
             startActivity(Intent(this, EmergencyActivity::class.java))

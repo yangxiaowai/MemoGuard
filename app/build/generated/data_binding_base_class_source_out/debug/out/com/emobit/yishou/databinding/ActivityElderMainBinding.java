@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
-import android.widget.ImageButton;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -14,7 +13,6 @@ import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.emobit.yishou.R;
 import com.google.android.material.appbar.AppBarLayout;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -27,26 +25,17 @@ public final class ActivityElderMainBinding implements ViewBinding {
   public final AppBarLayout appBarLayout;
 
   @NonNull
-  public final BottomNavigationView bottomNavigation;
-
-  @NonNull
   public final FrameLayout btnEmergency;
-
-  @NonNull
-  public final ImageButton btnSettings;
 
   @NonNull
   public final FragmentContainerView navHostFragment;
 
   private ActivityElderMainBinding(@NonNull ConstraintLayout rootView,
-      @NonNull AppBarLayout appBarLayout, @NonNull BottomNavigationView bottomNavigation,
-      @NonNull FrameLayout btnEmergency, @NonNull ImageButton btnSettings,
+      @NonNull AppBarLayout appBarLayout, @NonNull FrameLayout btnEmergency,
       @NonNull FragmentContainerView navHostFragment) {
     this.rootView = rootView;
     this.appBarLayout = appBarLayout;
-    this.bottomNavigation = bottomNavigation;
     this.btnEmergency = btnEmergency;
-    this.btnSettings = btnSettings;
     this.navHostFragment = navHostFragment;
   }
 
@@ -83,21 +72,9 @@ public final class ActivityElderMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.bottomNavigation;
-      BottomNavigationView bottomNavigation = ViewBindings.findChildViewById(rootView, id);
-      if (bottomNavigation == null) {
-        break missingId;
-      }
-
       id = R.id.btnEmergency;
       FrameLayout btnEmergency = ViewBindings.findChildViewById(rootView, id);
       if (btnEmergency == null) {
-        break missingId;
-      }
-
-      id = R.id.btnSettings;
-      ImageButton btnSettings = ViewBindings.findChildViewById(rootView, id);
-      if (btnSettings == null) {
         break missingId;
       }
 
@@ -107,8 +84,8 @@ public final class ActivityElderMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityElderMainBinding((ConstraintLayout) rootView, appBarLayout,
-          bottomNavigation, btnEmergency, btnSettings, navHostFragment);
+      return new ActivityElderMainBinding((ConstraintLayout) rootView, appBarLayout, btnEmergency,
+          navHostFragment);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

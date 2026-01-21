@@ -69,6 +69,12 @@ class ElderNavigationFragment : Fragment() {
         binding.btnStartNav.setOnClickListener {
             startARNavigation("home")
         }
+
+        // AR眼睛功能入口
+        binding.cardAREye.setOnClickListener {
+            val intent = Intent(requireContext(), AREyeActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun startARNavigation(destination: String) {

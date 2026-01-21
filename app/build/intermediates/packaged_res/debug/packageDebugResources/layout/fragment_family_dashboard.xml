@@ -11,49 +11,93 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:paddingHorizontal="@dimen/spacing_md"
-        android:paddingTop="@dimen/spacing_lg"
         android:paddingBottom="100dp">
 
-        <!-- 顶部标题 -->
+        <!-- 顶部渐变标题栏 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
+            android:background="@drawable/bg_gradient_purple"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/spacing_lg"
+            android:paddingTop="@dimen/spacing_xl"
+            android:paddingBottom="@dimen/spacing_lg">
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="监护面板"
-                android:textColor="@color/slate_800"
-                android:textSize="@dimen/text_2xl"
-                android:textStyle="bold" />
-
-            <ImageButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:background="@drawable/bg_circle_slate_light"
-                android:src="@drawable/ic_bell"
-                app:tint="@color/slate_600" />
-        </LinearLayout>
-
-        <!-- 长辈状态卡片 -->
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/spacing_lg"
-            app:cardBackgroundColor="@color/safe"
-            app:cardCornerRadius="@dimen/radius_lg"
-            app:cardElevation="4dp">
-
+            <!-- 标题行 -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:padding="@dimen/spacing_md">
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="EmoBit 忆守"
+                        android:textColor="@color/text_on_primary"
+                        android:textSize="@dimen/text_2xl"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_xxs"
+                        android:text="@string/app_subtitle"
+                        android:textColor="@color/primary_100"
+                        android:textSize="@dimen/text_sm" />
+                </LinearLayout>
+
+                <!-- 电量和时间 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:src="@drawable/ic_battery"
+                            app:tint="@color/text_on_primary" />
+
+                        <TextView
+                            android:id="@+id/tvBatteryLevel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/spacing_xxs"
+                            android:textColor="@color/text_on_primary"
+                            android:textSize="@dimen/text_sm"
+                            tools:text="85%" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvCurrentTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/primary_100"
+                        android:textSize="@dimen/text_xs"
+                        tools:text="22:42" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 用户信息卡片 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_md"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
 
                 <!-- 头像 -->
                 <FrameLayout
@@ -61,18 +105,18 @@
                     android:layout_height="64dp"
                     android:background="@drawable/bg_circle_white">
 
-                    <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:src="@drawable/ic_avatar_placeholder" />
+                        android:text="👤"
+                        android:textSize="30sp" />
                 </FrameLayout>
 
                 <LinearLayout
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/spacing_md"
-                    android:layout_weight="1"
                     android:orientation="vertical">
 
                     <TextView
@@ -82,245 +126,459 @@
                         android:textColor="@color/text_on_primary"
                         android:textSize="@dimen/text_xl"
                         android:textStyle="bold"
-                        tools:text="王大爷" />
+                        tools:text="张阿姨" />
 
+                    <!-- 安全状态徽章 -->
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/spacing_xxs"
+                        android:background="@drawable/bg_badge_safe_light"
                         android:gravity="center_vertical"
-                        android:orientation="horizontal">
+                        android:paddingHorizontal="@dimen/spacing_sm"
+                        android:paddingVertical="@dimen/spacing_xxs">
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:src="@drawable/ic_check_circle"
+                            app:tint="@color/safe" />
 
                         <TextView
                             android:id="@+id/tvStatusText"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:background="@drawable/bg_status_badge_light"
-                            android:paddingHorizontal="@dimen/spacing_sm"
-                            android:paddingVertical="@dimen/spacing_xxs"
-                            android:textColor="@color/text_on_primary"
-                            android:textSize="@dimen/text_sm"
-                            tools:text="状态正常" />
+                            android:layout_marginStart="@dimen/spacing_xxs"
+                            android:textColor="@color/safe"
+                            android:textSize="@dimen/text_xs"
+                            tools:text="安全状态良好" />
                     </LinearLayout>
-
-                    <TextView
-                        android:id="@+id/tvLocationText"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/spacing_xs"
-                        android:textColor="@color/safe_light"
-                        android:textSize="@dimen/text_sm"
-                        tools:text="在家中 · 安全区域" />
                 </LinearLayout>
-
-                <TextView
-                    android:id="@+id/tvUpdateTime"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/safe_light"
-                    android:textSize="@dimen/text_xs"
-                    tools:text="更新于 2分钟前" />
             </LinearLayout>
-        </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
 
-        <!-- 健康指标 -->
+        <!-- 系统状态标题 -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/spacing_md"
             android:layout_marginTop="@dimen/spacing_lg"
-            android:text="@string/family_health_metrics"
-            android:textColor="@color/slate_700"
+            android:text="@string/system_status"
+            android:textColor="@color/slate_800"
             android:textSize="@dimen/text_lg"
             android:textStyle="bold" />
 
-        <GridLayout
+        <!-- 系统状态 2x2 网格 -->
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/spacing_md"
             android:layout_marginTop="@dimen/spacing_sm"
-            android:columnCount="4">
+            android:orientation="vertical">
 
-            <!-- 心率 -->
-            <com.google.android.material.card.MaterialCardView
-                android:layout_width="0dp"
+            <!-- 第一行 -->
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_margin="@dimen/spacing_xxs"
-                app:cardBackgroundColor="@color/surface"
-                app:cardCornerRadius="@dimen/radius_md"
-                app:cardElevation="2dp">
+                android:orientation="horizontal">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <!-- GPS定位状态 -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="@dimen/spacing_sm">
+                    android:layout_marginEnd="@dimen/spacing_xs"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@color/surface"
+                    app:cardCornerRadius="@dimen/radius_lg"
+                    app:cardElevation="2dp">
 
-                    <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:src="@drawable/ic_heart"
-                        app:tint="@color/heart_rate" />
-
-                    <TextView
-                        android:id="@+id/tvHeartRate"
-                        android:layout_width="wrap_content"
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/spacing_xxs"
-                        android:textColor="@color/slate_800"
-                        android:textSize="@dimen/text_lg"
-                        android:textStyle="bold"
-                        tools:text="72" />
+                        android:orientation="vertical"
+                        android:padding="@dimen/spacing_md">
 
-                    <TextView
-                        android:layout_width="wrap_content"
+                        <FrameLayout
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:background="@drawable/bg_icon_primary_light">
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_location_pin"
+                                app:tint="@color/primary" />
+                        </FrameLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/spacing_sm"
+                            android:text="@string/gps_status"
+                            android:textColor="@color/slate_500"
+                            android:textSize="@dimen/text_xs" />
+
+                        <TextView
+                            android:id="@+id/tvGpsStatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/slate_800"
+                            android:textSize="@dimen/text_lg"
+                            android:textStyle="bold"
+                            tools:text="正常" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- AR眼镜连接 -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_xs"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@color/surface"
+                    app:cardCornerRadius="@dimen/radius_lg"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="心率"
-                        android:textColor="@color/slate_500"
-                        android:textSize="@dimen/text_xs" />
-                </LinearLayout>
-            </com.google.android.material.card.MaterialCardView>
+                        android:orientation="vertical"
+                        android:padding="@dimen/spacing_md">
 
-            <!-- 血氧 -->
-            <com.google.android.material.card.MaterialCardView
-                android:layout_width="0dp"
+                        <FrameLayout
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:background="@drawable/bg_icon_purple_light">
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_glasses"
+                                app:tint="@color/purple_500" />
+                        </FrameLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/spacing_sm"
+                            android:text="@string/ar_glasses_connection"
+                            android:textColor="@color/slate_500"
+                            android:textSize="@dimen/text_xs" />
+
+                        <TextView
+                            android:id="@+id/tvArStatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/slate_800"
+                            android:textSize="@dimen/text_lg"
+                            android:textStyle="bold"
+                            tools:text="已连接" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            <!-- 第二行 -->
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_margin="@dimen/spacing_xxs"
-                app:cardBackgroundColor="@color/surface"
-                app:cardCornerRadius="@dimen/radius_md"
-                app:cardElevation="2dp">
+                android:layout_marginTop="@dimen/spacing_sm"
+                android:orientation="horizontal">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <!-- 今日活动 -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="@dimen/spacing_sm">
+                    android:layout_marginEnd="@dimen/spacing_xs"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@color/surface"
+                    app:cardCornerRadius="@dimen/radius_lg"
+                    app:cardElevation="2dp">
 
-                    <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:src="@drawable/ic_activity"
-                        app:tint="@color/blood_oxygen" />
-
-                    <TextView
-                        android:id="@+id/tvBloodOxygen"
-                        android:layout_width="wrap_content"
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/spacing_xxs"
-                        android:textColor="@color/slate_800"
-                        android:textSize="@dimen/text_lg"
-                        android:textStyle="bold"
-                        tools:text="98" />
+                        android:orientation="vertical"
+                        android:padding="@dimen/spacing_md">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="血氧%"
-                        android:textColor="@color/slate_500"
-                        android:textSize="@dimen/text_xs" />
-                </LinearLayout>
-            </com.google.android.material.card.MaterialCardView>
+                        <FrameLayout
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:background="@drawable/bg_icon_green_light">
 
-            <!-- 步数 -->
-            <com.google.android.material.card.MaterialCardView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_margin="@dimen/spacing_xxs"
-                app:cardBackgroundColor="@color/surface"
-                app:cardCornerRadius="@dimen/radius_md"
-                app:cardElevation="2dp">
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_footprints"
+                                app:tint="@color/safe" />
+                        </FrameLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/spacing_sm"
+                            android:text="@string/today_activity"
+                            android:textColor="@color/slate_500"
+                            android:textSize="@dimen/text_xs" />
+
+                        <TextView
+                            android:id="@+id/tvSteps"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/slate_800"
+                            android:textSize="@dimen/text_lg"
+                            android:textStyle="bold"
+                            tools:text="3,245步" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- 心率监测 -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="@dimen/spacing_sm">
+                    android:layout_marginStart="@dimen/spacing_xs"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@color/surface"
+                    app:cardCornerRadius="@dimen/radius_lg"
+                    app:cardElevation="2dp">
 
-                    <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:src="@drawable/ic_footprints"
-                        app:tint="@color/steps" />
-
-                    <TextView
-                        android:id="@+id/tvSteps"
-                        android:layout_width="wrap_content"
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/spacing_xxs"
-                        android:textColor="@color/slate_800"
-                        android:textSize="@dimen/text_lg"
-                        android:textStyle="bold"
-                        tools:text="3,240" />
+                        android:orientation="vertical"
+                        android:padding="@dimen/spacing_md">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="步数"
-                        android:textColor="@color/slate_500"
-                        android:textSize="@dimen/text_xs" />
-                </LinearLayout>
-            </com.google.android.material.card.MaterialCardView>
+                        <FrameLayout
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:background="@drawable/bg_icon_red_light">
 
-            <!-- 睡眠 -->
-            <com.google.android.material.card.MaterialCardView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_margin="@dimen/spacing_xxs"
-                app:cardBackgroundColor="@color/surface"
-                app:cardCornerRadius="@dimen/radius_md"
-                app:cardElevation="2dp">
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_heart"
+                                app:tint="@color/heart_rate" />
+                        </FrameLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="@dimen/spacing_sm">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/spacing_sm"
+                            android:text="@string/heart_rate_monitoring"
+                            android:textColor="@color/slate_500"
+                            android:textSize="@dimen/text_xs" />
 
-                    <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:src="@drawable/ic_moon"
-                        app:tint="@color/sleep" />
+                        <TextView
+                            android:id="@+id/tvHeartRate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/slate_800"
+                            android:textSize="@dimen/text_lg"
+                            android:textStyle="bold"
+                            tools:text="75 BPM" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+        </LinearLayout>
 
-                    <TextView
-                        android:id="@+id/tvSleep"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/spacing_xxs"
-                        android:textColor="@color/slate_800"
-                        android:textSize="@dimen/text_lg"
-                        android:textStyle="bold"
-                        tools:text="7.5" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="睡眠h"
-                        android:textColor="@color/slate_500"
-                        android:textSize="@dimen/text_xs" />
-                </LinearLayout>
-            </com.google.android.material.card.MaterialCardView>
-        </GridLayout>
-
-        <!-- 今日活动 -->
+        <!-- 快捷功能标题 -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/spacing_md"
             android:layout_marginTop="@dimen/spacing_lg"
-            android:text="@string/family_today_activities"
-            android:textColor="@color/slate_700"
+            android:text="@string/quick_functions"
+            android:textColor="@color/slate_800"
             android:textSize="@dimen/text_lg"
             android:textStyle="bold" />
 
+        <!-- 快捷功能按钮 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/spacing_md"
+            android:layout_marginTop="@dimen/spacing_sm"
+            android:orientation="horizontal">
+
+            <!-- 位置追踪 -->
+            <LinearLayout
+                android:id="@+id/btnLocationTracking"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_sm">
+
+                <FrameLayout
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/bg_circle_primary">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_location_pin"
+                        app:tint="@color/text_on_primary" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_xs"
+                    android:text="@string/location_tracking"
+                    android:textColor="@color/slate_700"
+                    android:textSize="@dimen/text_xs" />
+            </LinearLayout>
+
+            <!-- AR辅助 -->
+            <LinearLayout
+                android:id="@+id/btnArAssist"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_sm">
+
+                <FrameLayout
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/bg_circle_purple">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_glasses"
+                        app:tint="@color/text_on_primary" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_xs"
+                    android:text="@string/ar_assist"
+                    android:textColor="@color/slate_700"
+                    android:textSize="@dimen/text_xs" />
+            </LinearLayout>
+
+            <!-- 健康提醒 -->
+            <LinearLayout
+                android:id="@+id/btnHealthReminder"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_sm">
+
+                <FrameLayout
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/bg_circle_orange">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_bell"
+                        app:tint="@color/text_on_primary" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_xs"
+                    android:text="@string/health_reminder"
+                    android:textColor="@color/slate_700"
+                    android:textSize="@dimen/text_xs" />
+            </LinearLayout>
+
+            <!-- 数字同伴 -->
+            <LinearLayout
+                android:id="@+id/btnDigitalCompanion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_sm">
+
+                <FrameLayout
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/bg_circle_pink">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_heart"
+                        app:tint="@color/text_on_primary" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_xs"
+                    android:text="@string/digital_companion"
+                    android:textColor="@color/slate_700"
+                    android:textSize="@dimen/text_xs" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 今日提醒标题 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/spacing_md"
+            android:layout_marginTop="@dimen/spacing_lg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/today_reminders"
+                android:textColor="@color/slate_800"
+                android:textSize="@dimen/text_lg"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/btnViewAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:paddingHorizontal="@dimen/spacing_sm"
+                android:paddingVertical="@dimen/spacing_xxs"
+                android:text="@string/view_all"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/text_sm" />
+        </LinearLayout>
+
+        <!-- 今日提醒卡片 -->
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/spacing_md"
             android:layout_marginTop="@dimen/spacing_sm"
             app:cardBackgroundColor="@color/surface"
             app:cardCornerRadius="@dimen/radius_lg"
@@ -332,52 +590,179 @@
                 android:orientation="vertical"
                 android:padding="@dimen/spacing_md">
 
-                <TextView
-                    android:id="@+id/tvActivity1"
+                <!-- 提醒项1 -->
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawableStart="@drawable/ic_check_circle"
-                    android:drawablePadding="@dimen/spacing_sm"
-                    android:drawableTint="@color/safe"
-                    android:textColor="@color/slate_700"
-                    android:textSize="@dimen/text_base"
-                    tools:text="08:30 · 起床" />
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingVertical="@dimen/spacing_sm">
 
-                <TextView
-                    android:id="@+id/tvActivity2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/spacing_sm"
-                    android:drawableStart="@drawable/ic_check_circle"
-                    android:drawablePadding="@dimen/spacing_sm"
-                    android:drawableTint="@color/safe"
-                    android:textColor="@color/slate_700"
-                    android:textSize="@dimen/text_base"
-                    tools:text="09:00 · 服药 (降压药)" />
+                    <View
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:background="@drawable/bg_dot_safe" />
 
-                <TextView
-                    android:id="@+id/tvActivity3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/spacing_sm"
-                    android:drawableStart="@drawable/ic_check_circle"
-                    android:drawablePadding="@dimen/spacing_sm"
-                    android:drawableTint="@color/safe"
-                    android:textColor="@color/slate_700"
-                    android:textSize="@dimen/text_base"
-                    tools:text="10:30 · 外出散步" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/spacing_md"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/tvActivity4"
+                        <TextView
+                            android:id="@+id/tvReminder1Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/slate_800"
+                            android:textSize="@dimen/text_base"
+                            tools:text="服用早晨药物" />
+
+                        <TextView
+                            android:id="@+id/tvReminder1Time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/slate_500"
+                            android:textSize="@dimen/text_xs"
+                            tools:text="09:00" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvReminder1Status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_badge_safe"
+                        android:paddingHorizontal="@dimen/spacing_sm"
+                        android:paddingVertical="@dimen/spacing_xxs"
+                        android:textColor="@color/safe"
+                        android:textSize="@dimen/text_xs"
+                        tools:text="已完成" />
+                </LinearLayout>
+
+                <!-- 提醒项2 -->
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/spacing_sm"
-                    android:drawableStart="@drawable/ic_check_circle"
-                    android:drawablePadding="@dimen/spacing_sm"
-                    android:drawableTint="@color/safe"
-                    android:textColor="@color/slate_700"
-                    android:textSize="@dimen/text_base"
-                    tools:text="12:00 · 回到家中" />
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingVertical="@dimen/spacing_sm">
+
+                    <View
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:background="@drawable/bg_dot_safe" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/spacing_md"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvReminder2Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/slate_800"
+                            android:textSize="@dimen/text_base"
+                            tools:text="午餐时间" />
+
+                        <TextView
+                            android:id="@+id/tvReminder2Time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/slate_500"
+                            android:textSize="@dimen/text_xs"
+                            tools:text="12:00" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvReminder2Status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_badge_safe"
+                        android:paddingHorizontal="@dimen/spacing_sm"
+                        android:paddingVertical="@dimen/spacing_xxs"
+                        android:textColor="@color/safe"
+                        android:textSize="@dimen/text_xs"
+                        tools:text="已完成" />
+                </LinearLayout>
+
+                <!-- 提醒项3 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingVertical="@dimen/spacing_sm">
+
+                    <View
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:background="@drawable/bg_dot_pending" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/spacing_md"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvReminder3Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/slate_800"
+                            android:textSize="@dimen/text_base"
+                            tools:text="散步锻炼" />
+
+                        <TextView
+                            android:id="@+id/tvReminder3Time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/slate_500"
+                            android:textSize="@dimen/text_xs"
+                            tools:text="14:30" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- 提醒项4 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingVertical="@dimen/spacing_sm">
+
+                    <View
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:background="@drawable/bg_dot_pending" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/spacing_md"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvReminder4Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/slate_800"
+                            android:textSize="@dimen/text_base"
+                            tools:text="服用晚间药物" />
+
+                        <TextView
+                            android:id="@+id/tvReminder4Time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/slate_500"
+                            android:textSize="@dimen/text_xs"
+                            tools:text="18:00" />
+                    </LinearLayout>
+                </LinearLayout>
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 

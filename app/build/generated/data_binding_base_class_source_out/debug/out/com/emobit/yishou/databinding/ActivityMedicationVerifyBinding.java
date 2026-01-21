@@ -6,10 +6,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.camera.view.PreviewView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
@@ -25,33 +27,140 @@ public final class ActivityMedicationVerifyBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final FrameLayout avatarContainer;
-
-  @NonNull
   public final ImageButton btnBack;
 
   @NonNull
   public final MaterialButton btnComplete;
 
   @NonNull
+  public final MaterialButton btnLater;
+
+  @NonNull
+  public final PreviewView cameraPreview;
+
+  @NonNull
+  public final FrameLayout cameraPreviewContainer;
+
+  @NonNull
+  public final MaterialCardView cardDetectionStatus;
+
+  @NonNull
   public final MaterialCardView cardPrompt;
 
   @NonNull
-  public final LinearLayout stepsContainer;
+  public final MaterialCardView cardStep1;
+
+  @NonNull
+  public final MaterialCardView cardStep2;
+
+  @NonNull
+  public final MaterialCardView cardStep3;
+
+  @NonNull
+  public final View detectionFrame;
+
+  @NonNull
+  public final ImageView ivDetectionIcon;
+
+  @NonNull
+  public final ImageView ivStep1Check;
+
+  @NonNull
+  public final ImageView ivStep2Check;
+
+  @NonNull
+  public final ImageView ivStep3Check;
+
+  @NonNull
+  public final FrameLayout overlayContainer;
+
+  @NonNull
+  public final FrameLayout step1Icon;
+
+  @NonNull
+  public final FrameLayout step2Icon;
+
+  @NonNull
+  public final FrameLayout step3Icon;
+
+  @NonNull
+  public final LinearLayout toolbar;
+
+  @NonNull
+  public final TextView tvCameraHint;
+
+  @NonNull
+  public final TextView tvDetectionStatus;
+
+  @NonNull
+  public final TextView tvPromptText;
+
+  @NonNull
+  public final TextView tvStep1Number;
+
+  @NonNull
+  public final TextView tvStep1Status;
+
+  @NonNull
+  public final TextView tvStep2Number;
+
+  @NonNull
+  public final TextView tvStep2Status;
+
+  @NonNull
+  public final TextView tvStep3Number;
+
+  @NonNull
+  public final TextView tvStep3Status;
 
   @NonNull
   public final TextView tvTitle;
 
   private ActivityMedicationVerifyBinding(@NonNull ConstraintLayout rootView,
-      @NonNull FrameLayout avatarContainer, @NonNull ImageButton btnBack,
-      @NonNull MaterialButton btnComplete, @NonNull MaterialCardView cardPrompt,
-      @NonNull LinearLayout stepsContainer, @NonNull TextView tvTitle) {
+      @NonNull ImageButton btnBack, @NonNull MaterialButton btnComplete,
+      @NonNull MaterialButton btnLater, @NonNull PreviewView cameraPreview,
+      @NonNull FrameLayout cameraPreviewContainer, @NonNull MaterialCardView cardDetectionStatus,
+      @NonNull MaterialCardView cardPrompt, @NonNull MaterialCardView cardStep1,
+      @NonNull MaterialCardView cardStep2, @NonNull MaterialCardView cardStep3,
+      @NonNull View detectionFrame, @NonNull ImageView ivDetectionIcon,
+      @NonNull ImageView ivStep1Check, @NonNull ImageView ivStep2Check,
+      @NonNull ImageView ivStep3Check, @NonNull FrameLayout overlayContainer,
+      @NonNull FrameLayout step1Icon, @NonNull FrameLayout step2Icon,
+      @NonNull FrameLayout step3Icon, @NonNull LinearLayout toolbar, @NonNull TextView tvCameraHint,
+      @NonNull TextView tvDetectionStatus, @NonNull TextView tvPromptText,
+      @NonNull TextView tvStep1Number, @NonNull TextView tvStep1Status,
+      @NonNull TextView tvStep2Number, @NonNull TextView tvStep2Status,
+      @NonNull TextView tvStep3Number, @NonNull TextView tvStep3Status, @NonNull TextView tvTitle) {
     this.rootView = rootView;
-    this.avatarContainer = avatarContainer;
     this.btnBack = btnBack;
     this.btnComplete = btnComplete;
+    this.btnLater = btnLater;
+    this.cameraPreview = cameraPreview;
+    this.cameraPreviewContainer = cameraPreviewContainer;
+    this.cardDetectionStatus = cardDetectionStatus;
     this.cardPrompt = cardPrompt;
-    this.stepsContainer = stepsContainer;
+    this.cardStep1 = cardStep1;
+    this.cardStep2 = cardStep2;
+    this.cardStep3 = cardStep3;
+    this.detectionFrame = detectionFrame;
+    this.ivDetectionIcon = ivDetectionIcon;
+    this.ivStep1Check = ivStep1Check;
+    this.ivStep2Check = ivStep2Check;
+    this.ivStep3Check = ivStep3Check;
+    this.overlayContainer = overlayContainer;
+    this.step1Icon = step1Icon;
+    this.step2Icon = step2Icon;
+    this.step3Icon = step3Icon;
+    this.toolbar = toolbar;
+    this.tvCameraHint = tvCameraHint;
+    this.tvDetectionStatus = tvDetectionStatus;
+    this.tvPromptText = tvPromptText;
+    this.tvStep1Number = tvStep1Number;
+    this.tvStep1Status = tvStep1Status;
+    this.tvStep2Number = tvStep2Number;
+    this.tvStep2Status = tvStep2Status;
+    this.tvStep3Number = tvStep3Number;
+    this.tvStep3Status = tvStep3Status;
     this.tvTitle = tvTitle;
   }
 
@@ -82,12 +191,6 @@ public final class ActivityMedicationVerifyBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.avatarContainer;
-      FrameLayout avatarContainer = ViewBindings.findChildViewById(rootView, id);
-      if (avatarContainer == null) {
-        break missingId;
-      }
-
       id = R.id.btnBack;
       ImageButton btnBack = ViewBindings.findChildViewById(rootView, id);
       if (btnBack == null) {
@@ -100,15 +203,165 @@ public final class ActivityMedicationVerifyBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.btnLater;
+      MaterialButton btnLater = ViewBindings.findChildViewById(rootView, id);
+      if (btnLater == null) {
+        break missingId;
+      }
+
+      id = R.id.cameraPreview;
+      PreviewView cameraPreview = ViewBindings.findChildViewById(rootView, id);
+      if (cameraPreview == null) {
+        break missingId;
+      }
+
+      id = R.id.cameraPreviewContainer;
+      FrameLayout cameraPreviewContainer = ViewBindings.findChildViewById(rootView, id);
+      if (cameraPreviewContainer == null) {
+        break missingId;
+      }
+
+      id = R.id.cardDetectionStatus;
+      MaterialCardView cardDetectionStatus = ViewBindings.findChildViewById(rootView, id);
+      if (cardDetectionStatus == null) {
+        break missingId;
+      }
+
       id = R.id.cardPrompt;
       MaterialCardView cardPrompt = ViewBindings.findChildViewById(rootView, id);
       if (cardPrompt == null) {
         break missingId;
       }
 
-      id = R.id.stepsContainer;
-      LinearLayout stepsContainer = ViewBindings.findChildViewById(rootView, id);
-      if (stepsContainer == null) {
+      id = R.id.cardStep1;
+      MaterialCardView cardStep1 = ViewBindings.findChildViewById(rootView, id);
+      if (cardStep1 == null) {
+        break missingId;
+      }
+
+      id = R.id.cardStep2;
+      MaterialCardView cardStep2 = ViewBindings.findChildViewById(rootView, id);
+      if (cardStep2 == null) {
+        break missingId;
+      }
+
+      id = R.id.cardStep3;
+      MaterialCardView cardStep3 = ViewBindings.findChildViewById(rootView, id);
+      if (cardStep3 == null) {
+        break missingId;
+      }
+
+      id = R.id.detectionFrame;
+      View detectionFrame = ViewBindings.findChildViewById(rootView, id);
+      if (detectionFrame == null) {
+        break missingId;
+      }
+
+      id = R.id.ivDetectionIcon;
+      ImageView ivDetectionIcon = ViewBindings.findChildViewById(rootView, id);
+      if (ivDetectionIcon == null) {
+        break missingId;
+      }
+
+      id = R.id.ivStep1Check;
+      ImageView ivStep1Check = ViewBindings.findChildViewById(rootView, id);
+      if (ivStep1Check == null) {
+        break missingId;
+      }
+
+      id = R.id.ivStep2Check;
+      ImageView ivStep2Check = ViewBindings.findChildViewById(rootView, id);
+      if (ivStep2Check == null) {
+        break missingId;
+      }
+
+      id = R.id.ivStep3Check;
+      ImageView ivStep3Check = ViewBindings.findChildViewById(rootView, id);
+      if (ivStep3Check == null) {
+        break missingId;
+      }
+
+      id = R.id.overlayContainer;
+      FrameLayout overlayContainer = ViewBindings.findChildViewById(rootView, id);
+      if (overlayContainer == null) {
+        break missingId;
+      }
+
+      id = R.id.step1Icon;
+      FrameLayout step1Icon = ViewBindings.findChildViewById(rootView, id);
+      if (step1Icon == null) {
+        break missingId;
+      }
+
+      id = R.id.step2Icon;
+      FrameLayout step2Icon = ViewBindings.findChildViewById(rootView, id);
+      if (step2Icon == null) {
+        break missingId;
+      }
+
+      id = R.id.step3Icon;
+      FrameLayout step3Icon = ViewBindings.findChildViewById(rootView, id);
+      if (step3Icon == null) {
+        break missingId;
+      }
+
+      id = R.id.toolbar;
+      LinearLayout toolbar = ViewBindings.findChildViewById(rootView, id);
+      if (toolbar == null) {
+        break missingId;
+      }
+
+      id = R.id.tvCameraHint;
+      TextView tvCameraHint = ViewBindings.findChildViewById(rootView, id);
+      if (tvCameraHint == null) {
+        break missingId;
+      }
+
+      id = R.id.tvDetectionStatus;
+      TextView tvDetectionStatus = ViewBindings.findChildViewById(rootView, id);
+      if (tvDetectionStatus == null) {
+        break missingId;
+      }
+
+      id = R.id.tvPromptText;
+      TextView tvPromptText = ViewBindings.findChildViewById(rootView, id);
+      if (tvPromptText == null) {
+        break missingId;
+      }
+
+      id = R.id.tvStep1Number;
+      TextView tvStep1Number = ViewBindings.findChildViewById(rootView, id);
+      if (tvStep1Number == null) {
+        break missingId;
+      }
+
+      id = R.id.tvStep1Status;
+      TextView tvStep1Status = ViewBindings.findChildViewById(rootView, id);
+      if (tvStep1Status == null) {
+        break missingId;
+      }
+
+      id = R.id.tvStep2Number;
+      TextView tvStep2Number = ViewBindings.findChildViewById(rootView, id);
+      if (tvStep2Number == null) {
+        break missingId;
+      }
+
+      id = R.id.tvStep2Status;
+      TextView tvStep2Status = ViewBindings.findChildViewById(rootView, id);
+      if (tvStep2Status == null) {
+        break missingId;
+      }
+
+      id = R.id.tvStep3Number;
+      TextView tvStep3Number = ViewBindings.findChildViewById(rootView, id);
+      if (tvStep3Number == null) {
+        break missingId;
+      }
+
+      id = R.id.tvStep3Status;
+      TextView tvStep3Status = ViewBindings.findChildViewById(rootView, id);
+      if (tvStep3Status == null) {
         break missingId;
       }
 
@@ -118,8 +371,12 @@ public final class ActivityMedicationVerifyBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMedicationVerifyBinding((ConstraintLayout) rootView, avatarContainer,
-          btnBack, btnComplete, cardPrompt, stepsContainer, tvTitle);
+      return new ActivityMedicationVerifyBinding((ConstraintLayout) rootView, btnBack, btnComplete,
+          btnLater, cameraPreview, cameraPreviewContainer, cardDetectionStatus, cardPrompt,
+          cardStep1, cardStep2, cardStep3, detectionFrame, ivDetectionIcon, ivStep1Check,
+          ivStep2Check, ivStep3Check, overlayContainer, step1Icon, step2Icon, step3Icon, toolbar,
+          tvCameraHint, tvDetectionStatus, tvPromptText, tvStep1Number, tvStep1Status,
+          tvStep2Number, tvStep2Status, tvStep3Number, tvStep3Status, tvTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

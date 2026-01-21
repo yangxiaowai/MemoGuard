@@ -1,466 +1,618 @@
 [
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_bg_health_card.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/bg_health_card.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_ic_chevron_right.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/ic_chevron_right.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/layout_fragment_elder_find_item.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/layout/fragment_elder_find_item.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_ic_chevron_left.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/ic_chevron_left.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/layout_activity_medication_verify.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/layout/activity_medication_verify.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_bg_circle_slate_light.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/bg_circle_slate_light.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_ic_trending_up.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/ic_trending_up.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_bg_icon_container_gradient.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/bg_icon_container_gradient.xml"
+        "merged": "com.emobit.yishou.app-debug-72:/drawable_bg_circle_orange.xml.flat",
+        "source": "com.emobit.yishou.app-main-74:/drawable/bg_circle_orange.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/mipmap-xxxhdpi_ic_launcher_round.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/mipmap-xxxhdpi/ic_launcher_round.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_ic_settings.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/ic_settings.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_ic_phone.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/ic_phone.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_ic_refresh.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/ic_refresh.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/layout_fragment_family_reports.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/layout/fragment_family_reports.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/layout_activity_emergency.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/layout/activity_emergency.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/layout_fragment_elder_medication.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/layout/fragment_elder_medication.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_bg_icon_white_alpha.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/bg_icon_white_alpha.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_ic_search.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/ic_search.xml"
+        "merged": "com.emobit.yishou.app-debug-72:/drawable_bg_icon_green_light.xml.flat",
+        "source": "com.emobit.yishou.app-main-74:/drawable/bg_icon_green_light.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/color_nav_item_color_family.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/color/nav_item_color_family.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_ic_dashboard.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/ic_dashboard.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_bg_circle_primary_light.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/bg_circle_primary_light.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_ic_wave.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/ic_wave.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_bg_status_safe.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/bg_status_safe.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_ic_map_pin.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/ic_map_pin.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/mipmap-xxhdpi_ic_launcher_round.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/mipmap-xxhdpi/ic_launcher_round.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_splash_background.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/splash_background.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/layout_fragment_elder_settings.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/layout/fragment_elder_settings.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_bg_avatar_container.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/bg_avatar_container.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_bg_circle_dark.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/bg_circle_dark.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_ic_warning.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/ic_warning.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_bg_rounded_slate.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/bg_rounded_slate.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_bg_gradient_map.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/bg_gradient_map.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_ic_message_circle.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/ic_message_circle.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/navigation_nav_elder.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/navigation/nav_elder.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_bg_status_badge_light.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/bg_status_badge_light.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_ic_glasses.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/ic_glasses.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_bg_logo_container.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/bg_logo_container.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_ic_tree.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/ic_tree.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/layout_activity_family_main.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/layout/activity_family_main.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_bg_status_safe.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/bg_status_safe.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_bg_dot_safe.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/bg_dot_safe.xml"
+        "merged": "com.emobit.yishou.app-debug-72:/drawable_bg_badge_safe.xml.flat",
+        "source": "com.emobit.yishou.app-main-74:/drawable/bg_badge_safe.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/layout_fragment_family_location.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/layout/fragment_family_location.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/layout_activity_areye.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/layout/activity_areye.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_bg_circle_danger_light.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/bg_circle_danger_light.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_bg_circle_dark.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/bg_circle_dark.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_bg_icon_white_alpha.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/bg_icon_white_alpha.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_ic_shopping_bag.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/ic_shopping_bag.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_bg_progress_track.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/bg_progress_track.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_ic_activity.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/ic_activity.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_bg_icon_container_primary.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/bg_icon_container_primary.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_ic_check.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/ic_check.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/layout_activity_role_selector.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/layout/activity_role_selector.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_ic_key.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/ic_key.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/layout_activity_ar_navigation.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/layout/activity_ar_navigation.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/layout_fragment_family_dashboard.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/layout/fragment_family_dashboard.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_bg_status_warning.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/bg_status_warning.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_ic_watch.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/ic_watch.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_ic_tv.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/ic_tv.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/layout_fragment_family_sos.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/layout/fragment_family_sos.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_ic_eye.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/ic_eye.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_ic_mic.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/ic_mic.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/mipmap-mdpi_ic_launcher_round.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/mipmap-mdpi/ic_launcher_round.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_ic_shopping_bag.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/ic_shopping_bag.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_bg_pill_warning.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/bg_pill_warning.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_ic_sparkles.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/ic_sparkles.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_ic_tv.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/ic_tv.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_bg_avatar_container.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/bg_avatar_container.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_bg_icon_slate_filled.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/bg_icon_slate_filled.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/xml_data_extraction_rules.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/xml/data_extraction_rules.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/layout_activity_elder_main.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/layout/activity_elder_main.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_bg_icon_safe_filled.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/bg_icon_safe_filled.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_bg_pill_safe.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/bg_pill_safe.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_ic_check.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/ic_check.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/layout_fragment_family_settings.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/layout/fragment_family_settings.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_ic_alert_triangle.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/ic_alert_triangle.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/layout_activity_family_main.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/layout/activity_family_main.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_progress_bar_safe.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/progress_bar_safe.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_bg_button_primary.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/bg_button_primary.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_ic_chevron_right.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/ic_chevron_right.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_bg_chat_bubble_ai.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/bg_chat_bubble_ai.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_ic_bell.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/ic_bell.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_bg_icon_container_gradient.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/bg_icon_container_gradient.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/mipmap-hdpi_ic_launcher.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/mipmap-hdpi/ic_launcher.xml"
+        "merged": "com.emobit.yishou.app-debug-72:/drawable_bg_icon_red_light.xml.flat",
+        "source": "com.emobit.yishou.app-main-74:/drawable/bg_icon_red_light.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_splash_background.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/splash_background.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/layout_fragment_elder_chat.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/layout/fragment_elder_chat.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/mipmap-xhdpi_ic_launcher_round.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/mipmap-xhdpi/ic_launcher_round.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_ic_phone.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/ic_phone.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_bg_circle_safe_light.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/bg_circle_safe_light.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_bg_icon_warning_light.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/bg_icon_warning_light.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_bg_button_danger.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/bg_button_danger.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_bg_icon_container_primary.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/bg_icon_container_primary.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_ic_tree.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/ic_tree.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_bg_rounded_slate.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/bg_rounded_slate.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_ic_chevron_left.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/ic_chevron_left.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_ic_location_pin.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/ic_location_pin.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_ic_key.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/ic_key.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/xml_backup_rules.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/xml/backup_rules.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_bg_progress_fill.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/bg_progress_fill.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_ic_clock.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/ic_clock.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_bg_button_safe.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/bg_button_safe.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/navigation_nav_family.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/navigation/nav_family.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_ic_moon.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/ic_moon.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_bg_dot_safe.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/bg_dot_safe.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_bg_icon_safe_light.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/bg_icon_safe_light.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/mipmap-xxhdpi_ic_launcher.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/mipmap-xxhdpi/ic_launcher.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_ic_avatar_placeholder.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/ic_avatar_placeholder.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/mipmap-hdpi_ic_launcher.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/mipmap-hdpi/ic_launcher.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_ic_mic.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/ic_mic.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_ic_send.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/ic_send.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_bg_icon_white_rounded.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/bg_icon_white_rounded.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/mipmap-xxhdpi_ic_launcher_round.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/mipmap-xxhdpi/ic_launcher_round.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/layout_fragment_family_settings.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/layout/fragment_family_settings.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/layout_fragment_elder_find_item.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/layout/fragment_elder_find_item.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/mipmap-mdpi_ic_launcher.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/mipmap-mdpi/ic_launcher.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/mipmap-xxxhdpi_ic_launcher.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/mipmap-xxxhdpi/ic_launcher.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_bg_icon_container_slate.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/bg_icon_container_slate.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_bg_logo_container.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/bg_logo_container.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_bg_gradient_warm.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/bg_gradient_warm.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/layout_activity_ar_navigation.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/layout/activity_ar_navigation.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/layout_fragment_elder_navigation.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/layout/fragment_elder_navigation.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/color_nav_item_color_family.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/color/nav_item_color_family.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_bg_icon_slate_filled.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/bg_icon_slate_filled.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/mipmap-xhdpi_ic_launcher.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/mipmap-xhdpi/ic_launcher.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_ic_trending_up.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/ic_trending_up.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_bg_circle_primary.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/bg_circle_primary.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_bg_emergency_button.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/bg_emergency_button.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/mipmap-mdpi_ic_launcher.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/mipmap-mdpi/ic_launcher.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_ic_watch.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/ic_watch.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_bg_circle_danger.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/bg_circle_danger.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_bg_icon_primary_filled.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/bg_icon_primary_filled.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_ic_search.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/ic_search.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_ic_check_circle.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/ic_check_circle.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/layout_fragment_family_alerts.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/layout/fragment_family_alerts.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/mipmap-xxhdpi_ic_launcher.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/mipmap-xxhdpi/ic_launcher.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_bg_icon_safe_light.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/bg_icon_safe_light.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_ic_dashboard.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/ic_dashboard.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_bg_button_danger.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/bg_button_danger.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/layout_fragment_elder_chat.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/layout/fragment_elder_chat.xml"
+        "merged": "com.emobit.yishou.app-debug-72:/drawable_bg_icon_purple_light.xml.flat",
+        "source": "com.emobit.yishou.app-main-74:/drawable/bg_icon_purple_light.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_ic_footprints.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/ic_footprints.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_bg_health_card.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/bg_health_card.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_ic_navigation.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/ic_navigation.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/layout_activity_role_selector.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/layout/activity_role_selector.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/layout_fragment_elder_home.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/layout/fragment_elder_home.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_bg_detection_frame.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/bg_detection_frame.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/ic_launcher_foreground.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_bg_circle_white.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/bg_circle_white.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_bg_circle_white.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/bg_circle_white.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_bg_icon_safe_filled.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/bg_icon_safe_filled.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/mipmap-xxxhdpi_ic_launcher.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/mipmap-xxxhdpi/ic_launcher.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_bg_status_badge_light.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/bg_status_badge_light.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/mipmap-xhdpi_ic_launcher.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/mipmap-xhdpi/ic_launcher.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/layout_item_recognized_person.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/layout/item_recognized_person.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_bg_badge_danger.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/bg_badge_danger.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_bg_status_warning.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/bg_status_warning.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_ic_refresh.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/ic_refresh.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/layout_fragment_elder_settings.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/layout/fragment_elder_settings.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_ic_heart.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/ic_heart.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_bg_gradient_warm.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/bg_gradient_warm.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_bg_card_elder.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/bg_card_elder.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_ic_home.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/ic_home.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_ic_image.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/ic_image.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_bg_quick_action.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/bg_quick_action.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/layout_fragment_elder_memory.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/layout/fragment_elder_memory.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_bg_chat_bubble_user.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/bg_chat_bubble_user.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_bg_chat_bubble_user.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/bg_chat_bubble_user.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_bg_circle_primary_light.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/bg_circle_primary_light.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/mipmap-hdpi_ic_launcher_round.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/mipmap-hdpi/ic_launcher_round.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_ic_eye.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/ic_eye.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_ic_pill.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/ic_pill.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_bg_badge_danger.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/bg_badge_danger.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_bg_icon_warning_light.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/bg_icon_warning_light.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_ic_alert_triangle.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/ic_alert_triangle.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_ic_heart.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/ic_heart.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_ic_home.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/ic_home.xml"
+        "merged": "com.emobit.yishou.app-debug-72:/drawable_bg_dot_pending.xml.flat",
+        "source": "com.emobit.yishou.app-main-74:/drawable/bg_dot_pending.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_ic_volume.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/ic_volume.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_ic_edit.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/ic_edit.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/navigation_nav_elder.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/navigation/nav_elder.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_bg_button_safe.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/bg_button_safe.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/layout_item_report_category.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/layout/item_report_category.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_ic_add.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/ic_add.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/navigation_nav_family.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/navigation/nav_family.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_bg_gradient_danger.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/bg_gradient_danger.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/layout_fragment_family_alerts.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/layout/fragment_family_alerts.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/layout_fragment_elder_medication.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/layout/fragment_elder_medication.xml"
+    },
+    {
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_ic_bell.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/ic_bell.xml"
+    },
+    {
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_bg_emergency_button.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/bg_emergency_button.xml"
+    },
+    {
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/mipmap-xxxhdpi_ic_launcher_round.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/mipmap-xxxhdpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_bg_gradient_primary.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/bg_gradient_primary.xml"
+    },
+    {
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/menu_menu_elder_bottom_nav.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/menu/menu_elder_bottom_nav.xml"
+    },
+    {
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_ic_moon.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/ic_moon.xml"
+    },
+    {
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_ic_users.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/ic_users.xml"
+    },
+    {
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/layout_fragment_family_medication_settings.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/layout/fragment_family_medication_settings.xml"
+    },
+    {
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_ic_image.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/ic_image.xml"
+    },
+    {
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_ic_play.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/ic_play.xml"
+    },
+    {
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_progress_bar_safe.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/progress_bar_safe.xml"
+    },
+    {
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_bg_circle_safe_light.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/bg_circle_safe_light.xml"
+    },
+    {
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_ic_navigation.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/ic_navigation.xml"
+    },
+    {
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_ic_sparkles.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/ic_sparkles.xml"
+    },
+    {
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_ic_battery.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/ic_battery.xml"
+    },
+    {
+        "merged": "com.emobit.yishou.app-debug-72:/drawable_bg_gradient_purple.xml.flat",
+        "source": "com.emobit.yishou.app-main-74:/drawable/bg_gradient_purple.xml"
+    },
+    {
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/layout_fragment_family_reports.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/layout/fragment_family_reports.xml"
+    },
+    {
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_bg_progress_fill.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/bg_progress_fill.xml"
+    },
+    {
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_ic_route.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/ic_route.xml"
+    },
+    {
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/xml_data_extraction_rules.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_bg_circle_slate_light.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/bg_circle_slate_light.xml"
+    },
+    {
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_ic_footprints.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/ic_footprints.xml"
+    },
+    {
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_bg_icon_primary_filled.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/bg_icon_primary_filled.xml"
+    },
+    {
+        "merged": "com.emobit.yishou.app-debug-72:/drawable_bg_circle_purple.xml.flat",
+        "source": "com.emobit.yishou.app-main-74:/drawable/bg_circle_purple.xml"
+    },
+    {
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_bg_gradient_overlay_bottom.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/bg_gradient_overlay_bottom.xml"
+    },
+    {
+        "merged": "com.emobit.yishou.app-debug-72:/drawable_bg_badge_safe_light.xml.flat",
+        "source": "com.emobit.yishou.app-main-74:/drawable/bg_badge_safe_light.xml"
+    },
+    {
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/color_nav_item_color.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/color/nav_item_color.xml"
+    },
+    {
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_bg_circle_safe.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/bg_circle_safe.xml"
     },
     {
         "merged": "com.emobit.yishou.app-debug-72:/layout_fragment_family_dashboard.xml.flat",
         "source": "com.emobit.yishou.app-main-74:/layout/fragment_family_dashboard.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_ic_users.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/ic_users.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_ic_avatar_placeholder.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/ic_avatar_placeholder.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_bg_status_danger.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/bg_status_danger.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/layout_fragment_elder_home.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/layout/fragment_elder_home.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/menu_menu_elder_bottom_nav.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/menu/menu_elder_bottom_nav.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/layout_item_report_category.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/layout/item_report_category.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/layout_activity_emergency.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/layout/activity_emergency.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_ic_chart.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/ic_chart.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_bg_icon_white_rounded.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/bg_icon_white_rounded.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_bg_quick_action.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/bg_quick_action.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_ic_message_circle.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/ic_message_circle.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/color_nav_item_color.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/color/nav_item_color.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_ic_check_circle.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/ic_check_circle.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_bg_button_secondary.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/bg_button_secondary.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/layout_fragment_elder_navigation.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/layout/fragment_elder_navigation.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_ic_play.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/ic_play.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/layout_fragment_elder_memory.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/layout/fragment_elder_memory.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_bg_circle_safe.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/bg_circle_safe.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_bg_progress_track.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/bg_progress_track.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/xml_backup_rules.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/xml/backup_rules.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/layout_fragment_family_location.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/layout/fragment_family_location.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/menu_menu_family_bottom_nav.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/menu/menu_family_bottom_nav.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_bg_button_secondary.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/bg_button_secondary.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_ic_activity.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/ic_activity.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/layout_activity_medication_verify.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/layout/activity_medication_verify.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/mipmap-mdpi_ic_launcher_round.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/mipmap-mdpi/ic_launcher_round.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_bg_circle_gray.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/bg_circle_gray.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_ic_map_pin.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/ic_map_pin.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_ic_chart.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/ic_chart.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_bg_button_primary.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/bg_button_primary.xml"
+        "merged": "com.emobit.yishou.app-debug-72:/drawable_bg_icon_primary_light.xml.flat",
+        "source": "com.emobit.yishou.app-main-74:/drawable/bg_icon_primary_light.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/layout_activity_elder_main.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/layout/activity_elder_main.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_ic_hand.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/ic_hand.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_ic_settings.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/ic_settings.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_bg_card_elder.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/bg_card_elder.xml"
     },
     {
-        "merged": "com.emobit.yishou.app-debug-72:/drawable_bg_chat_bubble_ai.xml.flat",
-        "source": "com.emobit.yishou.app-main-74:/drawable/bg_chat_bubble_ai.xml"
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_bg_status_danger.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/bg_status_danger.xml"
+    },
+    {
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_ic_pill.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/ic_pill.xml"
+    },
+    {
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/mipmap-xhdpi_ic_launcher_round.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/mipmap-xhdpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_bg_circle_danger_light.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/bg_circle_danger_light.xml"
+    },
+    {
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_ic_volume.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/ic_volume.xml"
+    },
+    {
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/menu_menu_family_bottom_nav.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/menu/menu_family_bottom_nav.xml"
+    },
+    {
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/drawable_bg_icon_container_slate.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/drawable/bg_icon_container_slate.xml"
+    },
+    {
+        "merged": "com.emobit.yishou.app-debug-72:/drawable_bg_circle_pink.xml.flat",
+        "source": "com.emobit.yishou.app-main-74:/drawable/bg_circle_pink.xml"
+    },
+    {
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/layout_fragment_family_ar.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/layout/fragment_family_ar.xml"
+    },
+    {
+        "merged": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-debug-72:/mipmap-hdpi_ic_launcher_round.xml.flat",
+        "source": "/Users/yangjun/.gradle/daemon/8.7/com.emobit.yishou.app-main-74:/mipmap-hdpi/ic_launcher_round.xml"
     }
 ]
